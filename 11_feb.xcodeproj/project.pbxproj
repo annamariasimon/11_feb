@@ -3,33 +3,91 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4B590CED64BAE6BB166039 /* Pods_11_feb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */; };
+		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
+		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
+		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
+		CFA237F624113330006FF316 /* navbarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F524113330006FF316 /* navbarr.jpg */; };
+		CFA237F824116BFB006FF316 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA237F724116BFB006FF316 /* Constants.swift */; };
+		CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA238192411829C006FF316 /* SignUpViewController.swift */; };
+		CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2381C241182BE006FF316 /* ReceiptViewController.swift */; };
+		CFA2381F241182C5006FF316 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2381E241182C5006FF316 /* Receipt.swift */; };
+		CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23820241182D1006FF316 /* LoginViewController.swift */; };
+		CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23822241182DC006FF316 /* CollectionViewController.swift */; };
+		CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23824241182E5006FF316 /* ClickViewController.swift */; };
+		CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382A24118322006FF316 /* FirstViewController.swift */; };
+		CFA2382D2411832C006FF316 /* ViewController 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382C2411832C006FF316 /* ViewController 2.swift */; };
+		CFA2382F24118335006FF316 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382E24118335006FF316 /* SignInViewController.swift */; };
 		CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A623F314AB0084B96A /* AppDelegate.swift */; };
 		CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */; };
-		CFB2F7AB23F314AB0084B96A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7AA23F314AB0084B96A /* ViewController.swift */; };
 		CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7AC23F314AB0084B96A /* Main.storyboard */; };
 		CFB2F7B023F314B00084B96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7AF23F314B00084B96A /* Assets.xcassets */; };
 		CFB2F7B323F314B00084B96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7B123F314B00084B96A /* LaunchScreen.storyboard */; };
 		CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7BD23F317C30084B96A /* Untitled-2.png */; };
 		CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7C223F32E9B0084B96A /* receipts_background.png */; };
-		CFB2F7C523F3323A0084B96A /* filterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7C423F3323A0084B96A /* filterTableViewController.swift */; };
+		CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */; };
+		CFDC2D9D241E73AB001B0D55 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D9C241E73AB001B0D55 /* Colors.swift */; };
+		CFDC2D9F241E7C02001B0D55 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D9E241E7C02001B0D55 /* TableView.swift */; };
+		CFDC2DA2241E7EE0001B0D55 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */; };
+		CFDC2DA3241E7EE0001B0D55 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */; };
+		CFDC2DA6241E82E9001B0D55 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */; };
+		CFDC2DA7241E82E9001B0D55 /* homeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */; };
+		CFDC2DA9241E8363001B0D55 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */; };
+		CFDC2DAB24226419001B0D55 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAA24226419001B0D55 /* Extensions.swift */; };
+		CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */; };
+		CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */; };
+		CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6035C24145E7800757C9A /* ProfileViewController.swift */; };
+		CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF6035E2414600E00757C9A /* IMG_1508.jpg */; };
+		CFF603612414630C00757C9A /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF603602414630C00757C9A /* profile.png */; };
+		CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF60393241A485900757C9A /* ASDA-Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C94795272311F8FCE56306C /* Pods-11_feb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11_feb.debug.xcconfig"; path = "Target Support Files/Pods-11_feb/Pods-11_feb.debug.xcconfig"; sourceTree = "<group>"; };
+		15A12CB46E2A6139083414D9 /* Pods-11_feb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11_feb.release.xcconfig"; path = "Target Support Files/Pods-11_feb/Pods-11_feb.release.xcconfig"; sourceTree = "<group>"; };
+		BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_feb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
+		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
+		CFA237F524113330006FF316 /* navbarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarr.jpg; sourceTree = "<group>"; };
+		CFA237F724116BFB006FF316 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFA238192411829C006FF316 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CFA2381C241182BE006FF316 /* ReceiptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		CFA2381E241182C5006FF316 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		CFA23820241182D1006FF316 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CFA23822241182DC006FF316 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CFA23824241182E5006FF316 /* ClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
+		CFA2382A24118322006FF316 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CFA2382C2411832C006FF316 /* ViewController 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController 2.swift"; sourceTree = "<group>"; };
+		CFA2382E24118335006FF316 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CFB2F7A323F314AB0084B96A /* 11_feb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_feb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2F7A623F314AB0084B96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFB2F7AA23F314AB0084B96A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../11_feb/ViewController.swift; sourceTree = "<group>"; };
 		CFB2F7AD23F314AB0084B96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFB2F7AF23F314B00084B96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB2F7B223F314B00084B96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB2F7B423F314B00084B96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFB2F7BD23F317C30084B96A /* Untitled-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-2.png"; path = "for_splashscreen/Untitled-2.png"; sourceTree = SOURCE_ROOT; };
 		CFB2F7C223F32E9B0084B96A /* receipts_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receipts_background.png; path = for_splashscreen/receipts_background.png; sourceTree = SOURCE_ROOT; };
-		CFB2F7C423F3323A0084B96A /* filterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterTableViewController.swift; sourceTree = "<group>"; };
+		CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CFDC2D9C241E73AB001B0D55 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CFDC2D9E241E7C02001B0D55 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		CFDC2DAA24226419001B0D55 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CFF6035C24145E7800757C9A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CFF6035E2414600E00757C9A /* IMG_1508.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1508.jpg; sourceTree = "<group>"; };
+		CFF603602414630C00757C9A /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		CFF60393241A485900757C9A /* ASDA-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASDA-Logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,19 +95,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4B590CED64BAE6BB166039 /* Pods_11_feb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60003962FDDF186F8D01DB5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9217FCF23CBB537855F5235 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C94795272311F8FCE56306C /* Pods-11_feb.debug.xcconfig */,
+				15A12CB46E2A6139083414D9 /* Pods-11_feb.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CFA2381B241182AC006FF316 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF603A4241A4F3100757C9A /* Good */,
+				CFF603A5241A4F3E00757C9A /* New */,
+				CFF603A7241A4F9900757C9A /* NeedWork */,
+				CFF603A6241A4F4700757C9A /* Other */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CFB2F79A23F314AA0084B96A = {
 			isa = PBXGroup;
 			children = (
-				CFB2F7BF23F31DE40084B96A /* ViewControllers */,
+				CFF60390241A47C400757C9A /* TableViewCells */,
+				CFA2381B241182AC006FF316 /* ViewControllers */,
 				CFB2F7BC23F317750084B96A /* Images */,
 				CFB2F7A523F314AB0084B96A /* 11_feb */,
 				CFB2F7A423F314AB0084B96A /* Products */,
+				A9217FCF23CBB537855F5235 /* Pods */,
+				60003962FDDF186F8D01DB5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +158,10 @@
 				CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */,
 				CFB2F7AC23F314AB0084B96A /* Main.storyboard */,
 				CFB2F7AF23F314B00084B96A /* Assets.xcassets */,
+				CFF60393241A485900757C9A /* ASDA-Logo.png */,
 				CFB2F7B123F314B00084B96A /* LaunchScreen.storyboard */,
 				CFB2F7B423F314B00084B96A /* Info.plist */,
+				CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */,
 			);
 			path = 11_feb;
 			sourceTree = "<group>";
@@ -79,17 +171,78 @@
 			children = (
 				CFB2F7BD23F317C30084B96A /* Untitled-2.png */,
 				CFB2F7C223F32E9B0084B96A /* receipts_background.png */,
+				CFA237F32411325F006FF316 /* navBar2.jpg */,
+				CFA237F524113330006FF316 /* navbarr.jpg */,
+				CFA237F1241131E7006FF316 /* navbarIcon.jpg */,
+				CFF6035E2414600E00757C9A /* IMG_1508.jpg */,
+				CFF603602414630C00757C9A /* profile.png */,
+				CF35420B240C10A400B45B91 /* Utilities.swift */,
+				CFA237F724116BFB006FF316 /* Constants.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
 		};
-		CFB2F7BF23F31DE40084B96A /* ViewControllers */ = {
+		CFDC2DAC24228F25001B0D55 /* New Other */ = {
 			isa = PBXGroup;
 			children = (
-				CFB2F7AA23F314AB0084B96A /* ViewController.swift */,
-				CFB2F7C423F3323A0084B96A /* filterTableViewController.swift */,
+				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "New Other";
+			sourceTree = "<group>";
+		};
+		CFF60390241A47C400757C9A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CFF603A4241A4F3100757C9A /* Good */ = {
+			isa = PBXGroup;
+			children = (
+				CFA238192411829C006FF316 /* SignUpViewController.swift */,
+				CFA23820241182D1006FF316 /* LoginViewController.swift */,
+				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
+				CFA23824241182E5006FF316 /* ClickViewController.swift */,
+				CFA2381E241182C5006FF316 /* Receipt.swift */,
+				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
+			);
+			path = Good;
+			sourceTree = "<group>";
+		};
+		CFF603A5241A4F3E00757C9A /* New */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC2DAC24228F25001B0D55 /* New Other */,
+				CFDC2D9E241E7C02001B0D55 /* TableView.swift */,
+				CFDC2D9C241E73AB001B0D55 /* Colors.swift */,
+				CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */,
+				CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */,
+				CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */,
+				CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */,
+				CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */,
+				CFDC2DAA24226419001B0D55 /* Extensions.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		CFF603A6241A4F4700757C9A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
+				CFA2382C2411832C006FF316 /* ViewController 2.swift */,
+				CFA2382A24118322006FF316 /* FirstViewController.swift */,
+				CFA2382E24118335006FF316 /* SignInViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CFF603A7241A4F9900757C9A /* NeedWork */ = {
+			isa = PBXGroup;
+			children = (
+				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
+			);
+			path = NeedWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFB2F7B723F314B00084B96A /* Build configuration list for PBXNativeTarget "11_feb" */;
 			buildPhases = (
+				7A31093AD132A0FEE1DF0F5C /* [CP] Check Pods Manifest.lock */,
 				CFB2F79F23F314AB0084B96A /* Sources */,
 				CFB2F7A023F314AB0084B96A /* Frameworks */,
 				CFB2F7A123F314AB0084B96A /* Resources */,
+				EA907634689A4CF539DFF8E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,23 +307,92 @@
 			files = (
 				CFB2F7B323F314B00084B96A /* LaunchScreen.storyboard in Resources */,
 				CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */,
+				CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */,
+				CFDC2DA7241E82E9001B0D55 /* homeCollectionViewCell.xib in Resources */,
+				CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */,
+				CFDC2DA3241E7EE0001B0D55 /* TableViewCell.xib in Resources */,
 				CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */,
+				CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */,
+				CFA237F624113330006FF316 /* navbarr.jpg in Resources */,
 				CFB2F7B023F314B00084B96A /* Assets.xcassets in Resources */,
 				CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */,
+				CFF603612414630C00757C9A /* profile.png in Resources */,
+				CFA237F42411325F006FF316 /* navBar2.jpg in Resources */,
+				CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A31093AD132A0FEE1DF0F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-11_feb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA907634689A4CF539DFF8E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-11_feb/Pods-11_feb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-11_feb/Pods-11_feb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-11_feb/Pods-11_feb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFB2F79F23F314AB0084B96A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB2F7AB23F314AB0084B96A /* ViewController.swift in Sources */,
+				CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */,
+				CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */,
+				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
+				CFDC2DA2241E7EE0001B0D55 /* TableViewCell.swift in Sources */,
+				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
+				CFA2382D2411832C006FF316 /* ViewController 2.swift in Sources */,
+				CFDC2D9D241E73AB001B0D55 /* Colors.swift in Sources */,
+				CFDC2DA9241E8363001B0D55 /* TableViewCellModel.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
+				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
+				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
+				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
+				CFDC2DA6241E82E9001B0D55 /* homeCollectionViewCell.swift in Sources */,
+				CFDC2DAB24226419001B0D55 /* Extensions.swift in Sources */,
+				CFA2382F24118335006FF316 /* SignInViewController.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
-				CFB2F7C523F3323A0084B96A /* filterTableViewController.swift in Sources */,
+				CFDC2D9F241E7C02001B0D55 /* TableView.swift in Sources */,
+				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
+				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
+				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
+				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
+				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +534,7 @@
 		};
 		CFB2F7B823F314B00084B96A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C94795272311F8FCE56306C /* Pods-11_feb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +552,7 @@
 		};
 		CFB2F7B923F314B00084B96A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A12CB46E2A6139083414D9 /* Pods-11_feb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

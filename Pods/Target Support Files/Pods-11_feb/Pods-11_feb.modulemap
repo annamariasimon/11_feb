@@ -1,0 +1,6 @@
+framework module Pods_11_feb {
+  umbrella header "Pods-11_feb-umbrella.h"
+
+  export *
+  module * { export * }
+}

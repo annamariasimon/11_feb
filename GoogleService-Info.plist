@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>507917760125-77r281u18m2150l21ub8p087evrgc3h5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.507917760125-77r281u18m2150l21ub8p087evrgc3h5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDAtXp0GJTI6SaAlCkGrr0LxkbHfRWVB_o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>507917760125</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ancsisimon.-1-feb</string>
+	<key>PROJECT_ID</key>
+	<string>receipt-app-bba11</string>
+	<key>STORAGE_BUCKET</key>
+	<string>receipt-app-bba11.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:507917760125:ios:d9fccf4fa1e24a934fe314</string>
+	<key>DATABASE_URL</key>
+	<string>https://receipt-app-bba11.firebaseio.com</string>
+</dict>
+</plist>

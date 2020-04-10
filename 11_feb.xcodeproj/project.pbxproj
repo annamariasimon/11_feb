@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D4B590CED64BAE6BB166039 /* Pods_11_feb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */; };
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
@@ -44,12 +43,19 @@
 		CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF6035E2414600E00757C9A /* IMG_1508.jpg */; };
 		CFF603612414630C00757C9A /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF603602414630C00757C9A /* profile.png */; };
 		CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF60393241A485900757C9A /* ASDA-Logo.png */; };
+		CFF95B3924350CBF004416E2 /* primark_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3124350CB4004416E2 /* primark_img.jpg */; };
+		CFF95B3A24350CBF004416E2 /* shopData.json in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3224350CB5004416E2 /* shopData.json */; };
+		CFF95B3B24350CBF004416E2 /* odeon_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3324350CB7004416E2 /* odeon_img.jpg */; };
+		CFF95B3C24350CBF004416E2 /* tesco_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3424350CB9004416E2 /* tesco_img.jpg */; };
+		CFF95B3D24350CBF004416E2 /* sixmp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3524350CBA004416E2 /* sixmp.jpg */; };
+		CFF95B3E24350CC0004416E2 /* wilko_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3624350CBC004416E2 /* wilko_img.jpg */; };
+		CFF95B3F24350CC0004416E2 /* boots_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3724350CBE004416E2 /* boots_img.jpg */; };
+		CFF95B4024350CC0004416E2 /* asda_ing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3824350CBF004416E2 /* asda_ing.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C94795272311F8FCE56306C /* Pods-11_feb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11_feb.debug.xcconfig"; path = "Target Support Files/Pods-11_feb/Pods-11_feb.debug.xcconfig"; sourceTree = "<group>"; };
 		15A12CB46E2A6139083414D9 /* Pods-11_feb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11_feb.release.xcconfig"; path = "Target Support Files/Pods-11_feb/Pods-11_feb.release.xcconfig"; sourceTree = "<group>"; };
-		BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_feb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
@@ -88,6 +94,14 @@
 		CFF6035E2414600E00757C9A /* IMG_1508.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1508.jpg; sourceTree = "<group>"; };
 		CFF603602414630C00757C9A /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		CFF60393241A485900757C9A /* ASDA-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASDA-Logo.png"; sourceTree = "<group>"; };
+		CFF95B3124350CB4004416E2 /* primark_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = primark_img.jpg; sourceTree = "<group>"; };
+		CFF95B3224350CB5004416E2 /* shopData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopData.json; sourceTree = "<group>"; };
+		CFF95B3324350CB7004416E2 /* odeon_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = odeon_img.jpg; sourceTree = "<group>"; };
+		CFF95B3424350CB9004416E2 /* tesco_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesco_img.jpg; sourceTree = "<group>"; };
+		CFF95B3524350CBA004416E2 /* sixmp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sixmp.jpg; sourceTree = "<group>"; };
+		CFF95B3624350CBC004416E2 /* wilko_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wilko_img.jpg; sourceTree = "<group>"; };
+		CFF95B3724350CBE004416E2 /* boots_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boots_img.jpg; sourceTree = "<group>"; };
+		CFF95B3824350CBF004416E2 /* asda_ing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = asda_ing.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4B590CED64BAE6BB166039 /* Pods_11_feb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +118,6 @@
 		60003962FDDF186F8D01DB5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA94A9F8BC4261D789E194A2 /* Pods_11_feb.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,7 +147,7 @@
 			children = (
 				CFF60390241A47C400757C9A /* TableViewCells */,
 				CFA2381B241182AC006FF316 /* ViewControllers */,
-				CFB2F7BC23F317750084B96A /* Images */,
+				CFB2F7BC23F317750084B96A /* Resources */,
 				CFB2F7A523F314AB0084B96A /* 11_feb */,
 				CFB2F7A423F314AB0084B96A /* Products */,
 				A9217FCF23CBB537855F5235 /* Pods */,
@@ -166,7 +178,7 @@
 			path = 11_feb;
 			sourceTree = "<group>";
 		};
-		CFB2F7BC23F317750084B96A /* Images */ = {
+		CFB2F7BC23F317750084B96A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				CFB2F7BD23F317C30084B96A /* Untitled-2.png */,
@@ -178,8 +190,16 @@
 				CFF603602414630C00757C9A /* profile.png */,
 				CF35420B240C10A400B45B91 /* Utilities.swift */,
 				CFA237F724116BFB006FF316 /* Constants.swift */,
+				CFF95B3824350CBF004416E2 /* asda_ing.jpg */,
+				CFF95B3724350CBE004416E2 /* boots_img.jpg */,
+				CFF95B3324350CB7004416E2 /* odeon_img.jpg */,
+				CFF95B3124350CB4004416E2 /* primark_img.jpg */,
+				CFF95B3224350CB5004416E2 /* shopData.json */,
+				CFF95B3524350CBA004416E2 /* sixmp.jpg */,
+				CFF95B3424350CB9004416E2 /* tesco_img.jpg */,
+				CFF95B3624350CBC004416E2 /* wilko_img.jpg */,
 			);
-			path = Images;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CFDC2DAC24228F25001B0D55 /* New Other */ = {
@@ -308,15 +328,23 @@
 				CFB2F7B323F314B00084B96A /* LaunchScreen.storyboard in Resources */,
 				CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */,
 				CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */,
+				CFF95B3B24350CBF004416E2 /* odeon_img.jpg in Resources */,
 				CFDC2DA7241E82E9001B0D55 /* homeCollectionViewCell.xib in Resources */,
 				CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */,
+				CFF95B3D24350CBF004416E2 /* sixmp.jpg in Resources */,
 				CFDC2DA3241E7EE0001B0D55 /* TableViewCell.xib in Resources */,
 				CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */,
+				CFF95B4024350CC0004416E2 /* asda_ing.jpg in Resources */,
 				CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */,
+				CFF95B3E24350CC0004416E2 /* wilko_img.jpg in Resources */,
 				CFA237F624113330006FF316 /* navbarr.jpg in Resources */,
+				CFF95B3A24350CBF004416E2 /* shopData.json in Resources */,
 				CFB2F7B023F314B00084B96A /* Assets.xcassets in Resources */,
+				CFF95B3C24350CBF004416E2 /* tesco_img.jpg in Resources */,
+				CFF95B3F24350CC0004416E2 /* boots_img.jpg in Resources */,
 				CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */,
 				CFF603612414630C00757C9A /* profile.png in Resources */,
+				CFF95B3924350CBF004416E2 /* primark_img.jpg in Resources */,
 				CFA237F42411325F006FF316 /* navBar2.jpg in Resources */,
 				CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */,
 			);

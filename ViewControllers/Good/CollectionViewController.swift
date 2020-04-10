@@ -15,20 +15,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let uk = Region(calendar: Calendars.gregorian, zone: Zones.europeLondon, locale: Locales.english) //NEW - SWIFTDATE
     
- //   @IBOutlet weak var menuButton: UIBarButtonItem!
-    
-    
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
-        receipts.addDocument(data:["companyName":"Tesco", "date": Timestamp(), "itemPrice":Double.random(in: 0...100), "paymentMethod":"Visa Debit"]) { error in
+        receipts.addDocument(data:["companyName":"Asda", "date": Timestamp(), "itemPrice":Double.random(in: 0...100), "paymentMethod":"MasterCard Debit"]) { error in
             self.loadReceipts()
         }
     }
     
     
     func loadReceipts() {
-        let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
+      let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
         receipts.getDocuments { (snapshot, error) in
             
@@ -184,6 +181,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         cell.label.text = receipt.companyName
         
+        struct dateText {
+            //define date text from swift date and timestamp
+            
+        }
+        
+        cell.label2.text = receipt.paymentMethod //this should be the date
         
         
         return cell

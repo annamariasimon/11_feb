@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ucR-fr-88C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNT-TA-Qdt">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--My Receipts-->
         <scene sceneID="aoz-Ro-RJS">
             <objects>
                 <collectionViewController id="yJP-9s-8kQ" customClass="CollectionViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAu-ph-mdl">
                                             <rect key="frame" x="20" y="20" width="329" height="176"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="35"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saq-qr-AQ1">
+                                            <rect key="frame" x="218" y="175" width="141" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -48,6 +55,7 @@
                                 <size key="customSize" width="369" height="216"/>
                                 <connections>
                                     <outlet property="label" destination="tAu-ph-mdl" id="NN9-EK-8fp"/>
+                                    <outlet property="label2" destination="saq-qr-AQ1" id="suK-YG-eSD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -61,10 +69,9 @@
                         <barButtonItem title="Home" image="house" catalog="system" width="205.66666666666669" id="rR5-Xv-6Ut"/>
                         <barButtonItem title="News" image="doc.append" catalog="system" width="313.66666666666669" id="VHs-nf-WeO"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="2qg-Mp-xdT">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="My Receipts" id="2qg-Mp-xdT">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="navbarIcon.jpg" id="awR-Q0-3Pt"/>
-                        <barButtonItem key="rightBarButtonItem" title="Filter" image="doc.text.magnifyingglass" catalog="system" id="Rr7-KX-Ke8">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" image="plus" catalog="system" id="Rr7-KX-Ke8">
                             <connections>
                                 <action selector="add:" destination="yJP-9s-8kQ" id="9TY-2G-Xzi"/>
                             </connections>
@@ -77,7 +84,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezS-pP-s88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3504" y="371"/>
+            <point key="canvasLocation" x="3502.898550724638" y="370.98214285714283"/>
         </scene>
         <!--Click View Controller-->
         <scene sceneID="GdI-kC-3wd">
@@ -87,21 +94,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-cA-uBA">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-cA-uBA">
+                                <rect key="frame" x="0.0" y="394" width="414" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A10-qg-nMC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9pa-eT-nLT">
+                                <rect key="frame" x="131.66666666666666" y="98" width="150.99999999999997" height="32"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMapType:" destination="O7t-zN-6g1" eventType="valueChanged" id="rlr-fu-c3A"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NP8-cA-uBA" firstAttribute="top" secondItem="Zdn-yO-Ted" secondAttribute="top" id="4yI-JX-V4w"/>
-                            <constraint firstItem="NP8-cA-uBA" firstAttribute="trailing" secondItem="Zdn-yO-Ted" secondAttribute="trailing" id="Gfi-2H-Lpt"/>
-                            <constraint firstItem="NP8-cA-uBA" firstAttribute="bottom" secondItem="Zdn-yO-Ted" secondAttribute="bottom" id="HLo-mt-WJ1"/>
-                            <constraint firstItem="NP8-cA-uBA" firstAttribute="leading" secondItem="Zdn-yO-Ted" secondAttribute="leading" id="N1a-PL-eoX"/>
+                            <constraint firstItem="9pa-eT-nLT" firstAttribute="top" secondItem="Zdn-yO-Ted" secondAttribute="top" constant="10" id="dZM-nq-F58"/>
+                            <constraint firstItem="9pa-eT-nLT" firstAttribute="centerX" secondItem="dCf-F3-1Md" secondAttribute="centerX" id="klL-yv-WA7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zdn-yO-Ted"/>
                     </view>
@@ -109,6 +130,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="Vv9-2S-tZA"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapView" destination="A10-qg-nMC" id="hvS-LK-lKG"/>
                         <outlet property="textView" destination="NP8-cA-uBA" id="9di-Xv-u9B"/>
                     </connections>
                 </viewController>
@@ -119,6 +141,7 @@
         <!--Table View-->
         <scene sceneID="wHn-GH-dGY">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JuL-R7-FTq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="rYh-8z-UMp" customClass="TableView" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tw-FB-lWQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -138,7 +161,6 @@
                         <outlet property="tableView" destination="qSd-RW-kpG" id="Et9-SW-tCf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JuL-R7-FTq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5339.130434782609" y="1127.6785714285713"/>
         </scene>
@@ -559,6 +581,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1Gn-p8-1Ul">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHC-ac-KVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Yq-Un-y8W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2DB-j1-kVw">
@@ -570,19 +593,18 @@
                         <segue destination="rYh-8z-UMp" kind="relationship" relationship="rootViewController" id="d5l-jq-oQb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iHC-ac-KVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4428.985507246377" y="1127.6785714285713"/>
         </scene>
     </scenes>
     <resources>
-        <image name="doc.append" catalog="system" width="56" height="64"/>
-        <image name="doc.text.magnifyingglass" catalog="system" width="58" height="64"/>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="doc.append" catalog="system" width="115" height="128"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="navbarIcon.jpg" width="28" height="28"/>
-        <image name="person.3" catalog="system" width="72" height="35"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profile.png" width="200" height="200"/>
         <image name="receipts_background.png" width="297.1199951171875" height="214.32000732421875"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>

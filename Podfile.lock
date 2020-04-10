@@ -164,6 +164,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
+  - DatePickerDialog (3.0)
   - Firebase/Analytics (6.17.0):
     - Firebase/Core
   - Firebase/Auth (6.17.0):
@@ -282,6 +283,7 @@ PODS:
   - SwiftDate (5.1.0)
 
 DEPENDENCIES:
+  - DatePickerDialog
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
@@ -290,6 +292,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - DatePickerDialog
     - SwiftDate
   trunk:
     - abseil
@@ -318,6 +321,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
   FirebaseAnalytics: cf95d3aab897612783020fbd98401d5366f135ee
   FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
@@ -340,6 +344,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
 
-PODFILE CHECKSUM: 940215f3f4f9361e30137359b0fbe74ca464748c
+PODFILE CHECKSUM: 18eb8d9a6d94cee7d90681c358143105e702ca4c
 
 COCOAPODS: 1.8.4

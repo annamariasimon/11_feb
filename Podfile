@@ -22,4 +22,5 @@ platform :ios, '10.0'
 use_frameworks!
 
 pod 'SwiftDate', '~> 5.0'
+pod 'DatePickerDialog'
 end

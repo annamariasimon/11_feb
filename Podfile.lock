@@ -281,6 +281,7 @@ PODS:
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
   - SwiftDate (5.1.0)
+  - SwiftQRScanner (1.0.9)
 
 DEPENDENCIES:
   - DatePickerDialog
@@ -289,6 +290,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - SwiftDate (~> 5.0)
+  - SwiftQRScanner (from `https://github.com/vinodiOS/SwiftQRScanner`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -318,6 +320,15 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
 
+EXTERNAL SOURCES:
+  SwiftQRScanner:
+    :git: https://github.com/vinodiOS/SwiftQRScanner
+
+CHECKOUT OPTIONS:
+  SwiftQRScanner:
+    :commit: 9aca78143307b4980a210caacf576dae667754f8
+    :git: https://github.com/vinodiOS/SwiftQRScanner
+
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -343,7 +354,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftQRScanner: e09dc7b549d0d7301cdca505d483665af8cda58e
 
-PODFILE CHECKSUM: 18eb8d9a6d94cee7d90681c358143105e702ca4c
+PODFILE CHECKSUM: 7c5f18cceeb3962e08d6cd4f0e080bdb582932d5
 
 COCOAPODS: 1.8.4

@@ -23,4 +23,5 @@ use_frameworks!
 
 pod 'SwiftDate', '~> 5.0'
 pod 'DatePickerDialog'
+pod 'SwiftQRScanner', :git => ‘https://github.com/vinodiOS/SwiftQRScanner’
 end

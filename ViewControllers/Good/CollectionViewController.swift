@@ -9,6 +9,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     private let reuseIdentifier = "Cell"
     
+    let datan = DataLoader().ShopsData
+    
     var itemSize: CGSize = CGSize(width: 0, height: 0)
     var items: [Receipt] = []
     var currentItem: Receipt?
@@ -173,13 +175,20 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return items.count
     } //IMPORTANT - the number of items -› number of days later
     
+  /*  override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Show the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    */
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
         let receipt = items[indexPath.row]
         
-        cell.label.text = receipt.companyName
+       // cell.label.text = receipt.companyName
+        cell.label.text = datan[0].name
         
         struct dateText {
             //define date text from swift date and timestamp

@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5785FA81FB03F30C7E4745AF /* Pods_11_feb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F9256E30F7E9F50710038 /* Pods_11_feb.framework */; };
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
-		CF85D563244364F0008D4377 /* qrCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D562244364F0008D4377 /* qrCodeReader.swift */; };
 		CF85D56524437813008D4377 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56424437813008D4377 /* shopsData.swift */; };
 		CF85D56724437969008D4377 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56624437969008D4377 /* DataLoader.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
+		CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56A24438A83008D4377 /* ScannerViewController.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
 		CFA237F624113330006FF316 /* navbarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F524113330006FF316 /* navbarr.jpg */; };
@@ -34,14 +34,6 @@
 		CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7BD23F317C30084B96A /* Untitled-2.png */; };
 		CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7C223F32E9B0084B96A /* receipts_background.png */; };
 		CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */; };
-		CFDC2D9D241E73AB001B0D55 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D9C241E73AB001B0D55 /* Colors.swift */; };
-		CFDC2D9F241E7C02001B0D55 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D9E241E7C02001B0D55 /* TableView.swift */; };
-		CFDC2DA2241E7EE0001B0D55 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */; };
-		CFDC2DA3241E7EE0001B0D55 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */; };
-		CFDC2DA6241E82E9001B0D55 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */; };
-		CFDC2DA7241E82E9001B0D55 /* homeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */; };
-		CFDC2DA9241E8363001B0D55 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */; };
-		CFDC2DAB24226419001B0D55 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAA24226419001B0D55 /* Extensions.swift */; };
 		CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */; };
 		CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */; };
 		CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6035C24145E7800757C9A /* ProfileViewController.swift */; };
@@ -56,7 +48,6 @@
 		CFF95B3E24350CC0004416E2 /* wilko_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3624350CBC004416E2 /* wilko_img.jpg */; };
 		CFF95B3F24350CC0004416E2 /* boots_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3724350CBE004416E2 /* boots_img.jpg */; };
 		CFF95B4024350CC0004416E2 /* asda_ing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3824350CBF004416E2 /* asda_ing.jpg */; };
-		CFF95B442441BD0C004416E2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF95B432441BD0C004416E2 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,10 +55,10 @@
 		15A12CB46E2A6139083414D9 /* Pods-11_feb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11_feb.release.xcconfig"; path = "Target Support Files/Pods-11_feb/Pods-11_feb.release.xcconfig"; sourceTree = "<group>"; };
 		215F9256E30F7E9F50710038 /* Pods_11_feb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_feb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		CF85D562244364F0008D4377 /* qrCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrCodeReader.swift; sourceTree = "<group>"; };
 		CF85D56424437813008D4377 /* shopsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
 		CF85D56624437969008D4377 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		CF85D56A24438A83008D4377 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
 		CFA237F524113330006FF316 /* navbarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarr.jpg; sourceTree = "<group>"; };
@@ -91,14 +82,6 @@
 		CFB2F7BD23F317C30084B96A /* Untitled-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-2.png"; path = "for_splashscreen/Untitled-2.png"; sourceTree = SOURCE_ROOT; };
 		CFB2F7C223F32E9B0084B96A /* receipts_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receipts_background.png; path = for_splashscreen/receipts_background.png; sourceTree = SOURCE_ROOT; };
 		CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		CFDC2D9C241E73AB001B0D55 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		CFDC2D9E241E7C02001B0D55 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
-		CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeCollectionViewCell.xib; sourceTree = "<group>"; };
-		CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
-		CFDC2DAA24226419001B0D55 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CFF6035C24145E7800757C9A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +96,6 @@
 		CFF95B3624350CBC004416E2 /* wilko_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wilko_img.jpg; sourceTree = "<group>"; };
 		CFF95B3724350CBE004416E2 /* boots_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boots_img.jpg; sourceTree = "<group>"; };
 		CFF95B3824350CBF004416E2 /* asda_ing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = asda_ing.jpg; sourceTree = "<group>"; };
-		CFF95B432441BD0C004416E2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,16 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				CFDC2DAC24228F25001B0D55 /* New Other */,
-				CFDC2D9E241E7C02001B0D55 /* TableView.swift */,
-				CFDC2D9C241E73AB001B0D55 /* Colors.swift */,
-				CFDC2DA0241E7EE0001B0D55 /* TableViewCell.swift */,
-				CFDC2DA1241E7EE0001B0D55 /* TableViewCell.xib */,
-				CFDC2DA4241E82E9001B0D55 /* homeCollectionViewCell.swift */,
-				CFDC2DA5241E82E9001B0D55 /* homeCollectionViewCell.xib */,
-				CFDC2DA8241E8363001B0D55 /* TableViewCellModel.swift */,
-				CFDC2DAA24226419001B0D55 /* Extensions.swift */,
-				CFF95B432441BD0C004416E2 /* Data.swift */,
-				CF85D562244364F0008D4377 /* qrCodeReader.swift */,
+				CF85D56A24438A83008D4377 /* ScannerViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -348,10 +321,8 @@
 				CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */,
 				CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */,
 				CFF95B3B24350CBF004416E2 /* odeon_img.jpg in Resources */,
-				CFDC2DA7241E82E9001B0D55 /* homeCollectionViewCell.xib in Resources */,
 				CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */,
 				CFF95B3D24350CBF004416E2 /* sixmp.jpg in Resources */,
-				CFDC2DA3241E7EE0001B0D55 /* TableViewCell.xib in Resources */,
 				CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */,
 				CFF95B4024350CC0004416E2 /* asda_ing.jpg in Resources */,
 				CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */,
@@ -421,29 +392,22 @@
 				CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */,
 				CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */,
 				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
-				CFDC2DA2241E7EE0001B0D55 /* TableViewCell.swift in Sources */,
+				CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFA2382D2411832C006FF316 /* ViewController 2.swift in Sources */,
-				CFDC2D9D241E73AB001B0D55 /* Colors.swift in Sources */,
-				CFDC2DA9241E8363001B0D55 /* TableViewCellModel.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
-				CFDC2DA6241E82E9001B0D55 /* homeCollectionViewCell.swift in Sources */,
-				CFF95B442441BD0C004416E2 /* Data.swift in Sources */,
-				CFDC2DAB24226419001B0D55 /* Extensions.swift in Sources */,
 				CFA2382F24118335006FF316 /* SignInViewController.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
-				CFDC2D9F241E7C02001B0D55 /* TableView.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
 				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
 				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
-				CF85D563244364F0008D4377 /* qrCodeReader.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7R58Q9QV;
 				INFOPLIST_FILE = 11_feb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7R58Q9QV;
 				INFOPLIST_FILE = 11_feb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

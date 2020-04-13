@@ -187,8 +187,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         let receipt = items[indexPath.row]
         
-       // cell.label.text = receipt.companyName
-        cell.label.text = datan[0].name
+        cell.label.text = receipt.companyName
+       // cell.label.text = datan[0].name
         
         struct dateText {
             //define date text from swift date and timestamp

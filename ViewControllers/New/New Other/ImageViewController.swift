@@ -1,11 +1,3 @@
-//
-//  ImageViewController.swift
-//  11_feb
-//
-//  Created by Annamaria Simon on 18/03/2020.
-//  Copyright © 2020 Annamaria Simon. All rights reserved.
-//
-
 import UIKit
 
 //COLLECTIONVIEW PER DAY:
@@ -29,7 +21,7 @@ class ImageViewController: UIViewController {
     
     fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")

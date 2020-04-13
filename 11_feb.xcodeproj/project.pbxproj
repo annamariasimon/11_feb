@@ -24,8 +24,6 @@
 		CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23822241182DC006FF316 /* CollectionViewController.swift */; };
 		CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23824241182E5006FF316 /* ClickViewController.swift */; };
 		CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382A24118322006FF316 /* FirstViewController.swift */; };
-		CFA2382D2411832C006FF316 /* ViewController 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382C2411832C006FF316 /* ViewController 2.swift */; };
-		CFA2382F24118335006FF316 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382E24118335006FF316 /* SignInViewController.swift */; };
 		CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A623F314AB0084B96A /* AppDelegate.swift */; };
 		CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */; };
 		CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7AC23F314AB0084B96A /* Main.storyboard */; };
@@ -70,8 +68,6 @@
 		CFA23822241182DC006FF316 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CFA23824241182E5006FF316 /* ClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
 		CFA2382A24118322006FF316 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CFA2382C2411832C006FF316 /* ViewController 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController 2.swift"; sourceTree = "<group>"; };
-		CFA2382E24118335006FF316 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CFB2F7A323F314AB0084B96A /* 11_feb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_feb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2F7A623F314AB0084B96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +212,7 @@
 		CFF603A4241A4F3100757C9A /* Good */ = {
 			isa = PBXGroup;
 			children = (
+				CFA2382A24118322006FF316 /* FirstViewController.swift */,
 				CFA238192411829C006FF316 /* SignUpViewController.swift */,
 				CFA23820241182D1006FF316 /* LoginViewController.swift */,
 				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
@@ -242,9 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
-				CFA2382C2411832C006FF316 /* ViewController 2.swift */,
-				CFA2382A24118322006FF316 /* FirstViewController.swift */,
-				CFA2382E24118335006FF316 /* SignInViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -394,12 +388,10 @@
 				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
 				CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
-				CFA2382D2411832C006FF316 /* ViewController 2.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
-				CFA2382F24118335006FF316 /* SignInViewController.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,

@@ -3,8 +3,6 @@ import Firebase
 import FirebaseFirestore
 import SwiftDate
 
-//TO DO: group them by types
-
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     private let reuseIdentifier = "Cell"

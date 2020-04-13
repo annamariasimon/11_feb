@@ -1,11 +1,3 @@
-//
-//  FirstViewController.swift
-//  11_feb
-//
-//  Created by Annamaria Simon on 01/03/2020.
-//  Copyright © 2020 Annamaria Simon. All rights reserved.
-//
-
 import UIKit
 
 class FirstViewController: UIViewController {
@@ -24,8 +16,6 @@ class FirstViewController: UIViewController {
     
     Utilities.styleFilledButton(signUpButton)
     Utilities.styleHollowButton(loginButton)
-    
-    
 
 }
 }

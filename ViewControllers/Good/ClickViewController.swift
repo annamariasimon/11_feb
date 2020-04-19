@@ -10,6 +10,8 @@ class ClickViewController: UIViewController {
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var shopNameTV: UITextView!
+    @IBOutlet weak var shopInfoTV: UITextView!
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
         
@@ -58,11 +60,12 @@ class ClickViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        textView.text = datam[1].name
+        shopNameTV.text = datam[0].name //textView1 + image!
+        shopInfoTV.text = datam[0].city
     
-  /*      guard let i = item else {return}
-            textView.text = "\(i.date!)\n\n\(i.companyName!)\n\nPrice: £\( i.itemPrice!)\n\n\(i.paymentMethod)"
-                */
+       guard let i = item else {return}
+            textView.text = "\(i.date!)\n\nPrice: £\( i.itemPrice!)\n\n\(i.paymentMethod)"
+                
             //should only appear if it's not nil
     
         

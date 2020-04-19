@@ -13,6 +13,9 @@
 		CF85D56724437969008D4377 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56624437969008D4377 /* DataLoader.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
 		CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56A24438A83008D4377 /* ScannerViewController.swift */; };
+		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
+		CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */; };
+		CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26D244CEDA8002FA6AE /* ShopsL.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
 		CFA237F624113330006FF316 /* navbarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F524113330006FF316 /* navbarr.jpg */; };
@@ -57,6 +60,9 @@
 		CF85D56624437969008D4377 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		CF85D56A24438A83008D4377 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
+		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
 		CFA237F524113330006FF316 /* navbarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarr.jpg; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */,
 				5785FA81FB03F30C7E4745AF /* Pods_11_feb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +116,7 @@
 		60003962FDDF186F8D01DB5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF90C269244CE3C5002FA6AE /* MapKit.framework */,
 				215F9256E30F7E9F50710038 /* Pods_11_feb.framework */,
 			);
 			name = Frameworks;
@@ -231,6 +239,8 @@
 			children = (
 				CFDC2DAC24228F25001B0D55 /* New Other */,
 				CF85D56A24438A83008D4377 /* ScannerViewController.swift */,
+				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
+				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -387,6 +397,7 @@
 				CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */,
 				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
 				CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */,
+				CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
@@ -394,6 +405,7 @@
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
+				CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
 				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
 				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,

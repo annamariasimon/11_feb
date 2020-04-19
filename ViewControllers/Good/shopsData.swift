@@ -1,4 +1,5 @@
 import Foundation
+import MapKit
 
 struct shopsData: Codable {
     var name: String 
@@ -8,7 +9,8 @@ struct shopsData: Codable {
           var id: Int
           var postcode: String
           fileprivate var imageName: String
-          fileprivate var coordinates: Coordinates
+       //  let coordinates: Coordinates
+    fileprivate var coordinates: Coordinates
           
 }
       

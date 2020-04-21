@@ -1,6 +1,7 @@
 [
     {
         "name": "Asda",
+        "title": "Asda",
         "category": "Supermarket",
         "address": "St Pauls Rd",
         "city": "Bournemouth",
@@ -14,6 +15,7 @@
     },
     {
           "name": "Tesco Metro",
+          "title": "Tesco Metro",
           "category": "Supermarket",
           "address": "11 Bourne Avenue",
           "city": "Bournemouth",
@@ -28,6 +30,7 @@
  
  {
          "name": "Wilko",
+         "title": "Wilko",
          "category": "Hardware",
          "address": "Dalkeith Ln",
          "city": "Bournemouth",
@@ -42,6 +45,7 @@
  
  {
          "name": "Primark",
+         "title": "Primark",
          "category": "Clothing",
          "address": "48-54 Commercial Road",
          "city": "Bournemouth",
@@ -56,6 +60,7 @@
  
  {
          "name": "Boots",
+         "title": "Boots",
          "category": "Health and beauty",
          "address": "18-20 Commercial Road",
          "city": "Bournemouth",
@@ -70,6 +75,7 @@
  
  {
          "name": "Sixty Million Postcards",
+         "title": "Sixty Million Postcards",
          "category": "Pub",
          "address": "19-21 Exeter Road",
          "city": "Bournemouth",
@@ -83,15 +89,16 @@
      },
  
  {   "name": "ODEON",
-            "category": "Movie theatre",
-            "address": "Exeter Cres",
-            "city": "Bournemouth",
-            "id": 1002,
-            "postcode": "BH2 5DD",
-            "coordinates": {
-                "longitude": -1.878968,
-                "latitude": 50.718921
-            },
-            "imageName": "odeon_img"
+     "title": "ODEON",
+     "category": "Movie theatre",
+     "address": "Exeter Cres",
+     "city": "Bournemouth",
+     "id": 1002,
+     "postcode": "BH2 5DD",
+     "coordinates": {
+            "longitude": -1.878968,
+            "latitude": 50.718921
+        },
+     "imageName": "odeon_img"
         }
 ]

@@ -2,6 +2,7 @@ import AVFoundation
 import UIKit
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
@@ -12,11 +13,14 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         captureSession = AVCaptureSession()
 
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
+        
         let videoInput: AVCaptureDeviceInput
 
         do {
+            
             videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
-        } catch {
+            
+        } catch{
             return
         }
 
@@ -78,6 +82,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             found(code: stringValue)
+            
         }
 
         dismiss(animated: true)

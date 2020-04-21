@@ -2,6 +2,8 @@ import UIKit
 import MapKit
 
 class shopLocationViewController: UIViewController {
+    
+    private var datas: [ShopsL] = []
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -34,6 +36,11 @@ class shopLocationViewController: UIViewController {
         mapView.setCameraZoomRange(zoomRange, animated: true)
         
         mapView.delegate = self
+        
+     /*   mapView.register(shopView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        loadInitialData()
+        mapView.addAnnotation(datas) */
         
         let asDa = ShopsL(
           title: "Asda Bournemouth",

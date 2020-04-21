@@ -27,6 +27,7 @@
 		CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23822241182DC006FF316 /* CollectionViewController.swift */; };
 		CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23824241182E5006FF316 /* ClickViewController.swift */; };
 		CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382A24118322006FF316 /* FirstViewController.swift */; };
+		CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A61D244E0A3D004EE385 /* shopView.swift */; };
 		CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A623F314AB0084B96A /* AppDelegate.swift */; };
 		CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */; };
 		CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7AC23F314AB0084B96A /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		CFA23822241182DC006FF316 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CFA23824241182E5006FF316 /* ClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
 		CFA2382A24118322006FF316 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CFB2A61D244E0A3D004EE385 /* shopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopView.swift; sourceTree = "<group>"; };
 		CFB2F7A323F314AB0084B96A /* 11_feb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_feb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2F7A623F314AB0084B96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,7 +207,6 @@
 		CFDC2DAC24228F25001B0D55 /* New Other */ = {
 			isa = PBXGroup;
 			children = (
-				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 			);
 			path = "New Other";
 			sourceTree = "<group>";
@@ -241,6 +242,7 @@
 				CF85D56A24438A83008D4377 /* ScannerViewController.swift */,
 				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
+				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -248,6 +250,7 @@
 		CFF603A6241A4F4700757C9A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
 			);
 			path = Other;
@@ -410,6 +413,7 @@
 				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
 				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
+				CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,

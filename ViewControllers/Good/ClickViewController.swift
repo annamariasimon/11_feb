@@ -41,16 +41,16 @@ class ClickViewController: UIViewController {
     }
     */
     var item: Receipt!
-     var items: [Receipt] = []
+    var items: [Receipt] = []
     
   //  let data: shopData
  //   let json = try? JSONSerialization.jsonObject(with: data, options: [])
    
     
     func loadShops() {
-      let shopID = Firestore.firestore().collection("shopID")
+        let shopID = Firestore.firestore().collection("shopID").document("\(item.companyName!)")
         
-        shopID.getDocuments { (snapshot, error) in
+       shopID.getDocuments { (snapshot, error) in
             
             guard let documents = snapshot?.documents else{
                 return

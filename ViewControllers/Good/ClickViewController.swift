@@ -41,6 +41,7 @@ class ClickViewController: UIViewController {
     }
     */
     var item: Receipt!
+     var items: [Receipt] = []
     
   //  let data: shopData
  //   let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -53,6 +54,16 @@ class ClickViewController: UIViewController {
             
             guard let documents = snapshot?.documents else{
                 return
+            }
+            self.items.removeAll()
+            for document in documents {
+                let r = Receipt()
+               // r.telephone = document["telephone"] as? Int
+                r.city = document["city"] as? String
+                r.postcode = document["postcode"] as? String
+                r.name = document["name"] as? String
+                
+                self.items.append(r)
             }
         }
     }

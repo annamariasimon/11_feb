@@ -19,7 +19,7 @@ class Receipt {
 //    var VAT: Double!
    var paymentMethod: String?
     
-    var shopID: Int!
+    var shopID: String!
     var name: String!
     var category: String!
     var city: String!

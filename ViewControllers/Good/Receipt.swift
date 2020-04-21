@@ -18,7 +18,19 @@ class Receipt {
    // var total: Double!
 //    var VAT: Double!
    var paymentMethod: String?
-//    var returnPolicy: String!
+    
+    var shopID: Int!
+    var name: String!
+    var category: String!
+    var city: String!
+    var title: String!
+    var postcode: String!
+    
+    struct coordinates {
+        var longitude: CGFloat
+        var latitude: CGFloat
+    }
+    
 //    var authorisationNo: Int!
   //  var telephone: Int!
     

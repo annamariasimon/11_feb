@@ -5,8 +5,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     
    override func viewDidLoad() {
             super.viewDidLoad()
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             Utilities.styleFilledButton(loginButton)
             
         }
-  /*  func validateFields() -> String? {
+ /*   func validateFields() -> String? {
                
                //check that all fields are filled in
                if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -33,12 +33,15 @@ class LoginViewController: UIViewController {
                    
                    return "Please fill in all fields."
                    
-               } */
+        } } */
 
-        
-        func loginTapped(_ sender: Any) {
+        //create function from login button - KYLE
+
+    
+    @IBAction func loginTapped(_ sender: Any) {
+    
             
-    /*    //validate the fields
+      /*  //validate the fields
                   let error = validateFields()
                   
                   if error != nil {
@@ -60,10 +63,10 @@ class LoginViewController: UIViewController {
            
             else{
                     
-           /*         let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                               
-                               view.window?.rootViewController = homeViewController
-                    view.window?.makeKeyAndVisible() */
+                   let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? UINavigationController
+                                 
+                    self.view.window?.rootViewController = homeViewController
+                    self.view.window?.makeKeyAndVisible()
                     
                 }
                 

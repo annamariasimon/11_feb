@@ -7,7 +7,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     private let reuseIdentifier = "Cell"
     
-    let datan = DataLoader().ShopsData
+  //  let datan = DataLoader().ShopsData
     
     var itemSize: CGSize = CGSize(width: 0, height: 0)
     var items: [Receipt] = []
@@ -26,7 +26,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
-        receipts.addDocument(data:["companyName":"Asda", "date": Timestamp(), "itemPrice":Double.random(in: 0...100), "paymentMethod":"MasterCard Debit"]) { error in
+        receipts.addDocument(data:["companyName":"Tesco Metro", "date": Timestamp(), "itemPrice":Double.random(in: 0...100), "paymentMethod":"MasterCard Debit"])
+        { error in
             self.loadReceipts()
         }
     }

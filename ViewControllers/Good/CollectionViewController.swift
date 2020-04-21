@@ -15,6 +15,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let uk = Region(calendar: Calendars.gregorian, zone: Zones.europeLondon, locale: Locales.english) //NEW - SWIFTDATE
     
+    @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
+       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController")
+        else
+       {  return }
+    present(menuViewController, animated: true)
+    }
+    
+    
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
@@ -200,5 +208,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
 
     // MARK: UICollectionViewDelegate
+    
 
 }

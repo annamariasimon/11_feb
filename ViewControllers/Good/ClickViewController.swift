@@ -44,8 +44,7 @@ class ClickViewController: UIViewController {
     
   //  let data: shopData
  //   let json = try? JSONSerialization.jsonObject(with: data, options: [])
-    
-    let shopID = Firestore.firestore().collection("shopID")
+   
     
     func loadShops() {
       let shopID = Firestore.firestore().collection("shopID")

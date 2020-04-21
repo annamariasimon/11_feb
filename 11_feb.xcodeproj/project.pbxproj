@@ -29,6 +29,7 @@
 		CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382A24118322006FF316 /* FirstViewController.swift */; };
 		CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A61D244E0A3D004EE385 /* shopView.swift */; };
 		CFB2A620244EE196004EE385 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A61F244EE196004EE385 /* MenuViewController.swift */; };
+		CFB2A622244F0C55004EE385 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A621244F0C55004EE385 /* Shop.swift */; };
 		CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A623F314AB0084B96A /* AppDelegate.swift */; };
 		CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */; };
 		CFB2F7AE23F314AB0084B96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7AC23F314AB0084B96A /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		CFA2382A24118322006FF316 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CFB2A61D244E0A3D004EE385 /* shopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopView.swift; sourceTree = "<group>"; };
 		CFB2A61F244EE196004EE385 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CFB2A621244F0C55004EE385 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CFB2F7A323F314AB0084B96A /* 11_feb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_feb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2F7A623F314AB0084B96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB2F7A823F314AB0084B96A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				CFA23820241182D1006FF316 /* LoginViewController.swift */,
 				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
 				CFA23824241182E5006FF316 /* ClickViewController.swift */,
+				CFB2A621244F0C55004EE385 /* Shop.swift */,
 				CFA2381E241182C5006FF316 /* Receipt.swift */,
 				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
 				CF85D56424437813008D4377 /* shopsData.swift */,
@@ -420,6 +423,7 @@
 				CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
+				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

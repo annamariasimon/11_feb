@@ -41,49 +41,53 @@ class ClickViewController: UIViewController {
     }
     */
     var item: Receipt!
-    var items: [Receipt] = []
+    var shop: Shop!
     
   //  let data: shopData
  //   let json = try? JSONSerialization.jsonObject(with: data, options: [])
    
     
     func loadShops() {
-        let shopID = Firestore.firestore().collection("shopID").document("\(item.companyName!)")
+        let shopRef = Firestore.firestore().collection("shops").document("\(item.shopId!)")
         
-       shopID.getDocuments { (snapshot, error) in
+       shopRef.getDocument { (document, error) in
             
-            guard let documents = snapshot?.documents else{
+            guard let document = document else{
                 return
             }
-            self.items.removeAll()
-            for document in documents {
-                let r = Receipt()
+        
+        self.shop = Shop()
                // r.telephone = document["telephone"] as? Int
-                r.city = document["city"] as? String
-                r.postcode = document["postcode"] as? String
-                r.name = document["name"] as? String
-                
-                self.items.append(r)
+        self.shop.city = document["city"] as? String
+        self.shop.postcode = document["postcode"] as? String
+        self.shop.name = document["name"] as? String
+        self.shop.title = document["title"] as? String
+        self.shop.address = document["address"] as? String
+        self.shop.postcode = document["postcode"] as? String
+        self.shop.coordinates = document["coordinates"] as? GeoPoint
+        
             }
-        }
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        loadShops()
+        
         let asdaBournemouth = CLLocation(latitude: 50.725830, longitude: -1.865020)
         let regionRadius: CLLocationDistance = 300.0
         let region = MKCoordinateRegion(center: asdaBournemouth.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(region, animated: true)
         mapView.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         shopNameTV.text = item.companyName //textView1 + image!
-        shopInfoTV.text = item.companyName
+        shopInfoTV.text = shop.city
     
        guard let item = item else {return}
             textView.text = "\(item.date!)\n\nPrice: £\( item.itemPrice!)\n\n\(item.paymentMethod)"

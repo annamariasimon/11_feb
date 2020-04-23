@@ -15,10 +15,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let uk = Region(calendar: Calendars.gregorian, zone: Zones.europeLondon, locale: Locales.english) //NEW - SWIFTDATE
     
+    let transition = SlideInTransition()
+    
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
        guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController")
         else
        {  return }
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
     present(menuViewController, animated: true)
     }
     
@@ -26,8 +30,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
-        receipts.addDocument(data:["companyName":"Tesco Metro", "date": Timestamp(), "itemPrice":Double.random(in: 0...100),
-                                   "paymentMethod":"MasterCard Debit"])
+        receipts.addDocument(data:["companyName":"Asda", "date": Timestamp(), "itemPrice":Double.random(in: 0...100),
+                                   "paymentMethod":"MasterCard Debit", "shopId":"khsLvNNalOCrVQoX1VRr"])
         { error in
             self.loadReceipts()
         }
@@ -35,6 +39,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     
     func loadReceipts() {
+        
       let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
         receipts.getDocuments { (snapshot, error) in
@@ -129,8 +134,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
     }
     
+    
     override func viewDidLoad() {
-        
         
         super.viewDidLoad()
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -213,4 +218,15 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     // MARK: UICollectionViewDelegate
     
 
+}
+
+extension CollectionViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UICollectionViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UICollectionViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
 }

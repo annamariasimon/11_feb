@@ -2,10 +2,7 @@ import UIKit
 import Firebase
 import MapKit
 
-
 class ClickViewController: UIViewController {
-    
- //    let datam = DataLoader().ShopsData
     
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var textView: UITextView!
@@ -22,42 +19,25 @@ class ClickViewController: UIViewController {
         }
     }
     
- /*   struct shopDataset: Codable {
-        
-        var name:String = ""
-        var category:String = ""
-        var address:String = ""
-        var city:String = ""
-        var id:Int = 0
-        var postcode:String = ""
-        fileprivate var imageName:String = ""
-        fileprivate var coordinates:Coordinates
-        
-    }
-    
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
-    */
     var item: Receipt!
     var shop: Shop!
-    
-  //  let data: shopData
- //   let json = try? JSONSerialization.jsonObject(with: data, options: [])
-   
-    
+
     func loadShops() {
+        
         let shopRef = Firestore.firestore().collection("shops").document("\(item.shopId!)")
         
-       shopRef.getDocument { (document, error) in
-            
-            guard let document = document else{
+        shopRef.getDocument { (document, error) in
+        
+       
+            guard let document = document, document.exists else {
                 return
             }
-        
+
+           //   print(document.data())
+            print("Hello")
+            
         self.shop = Shop()
-               // r.telephone = document["telephone"] as? Int
+       
         self.shop.city = document["city"] as? String
         self.shop.postcode = document["postcode"] as? String
         self.shop.name = document["name"] as? String
@@ -65,11 +45,12 @@ class ClickViewController: UIViewController {
         self.shop.address = document["address"] as? String
         self.shop.postcode = document["postcode"] as? String
         self.shop.coordinates = document["coordinates"] as? GeoPoint
-        
+            
+            self.shopInfoTV.text = self.shop.city
+    
             }
-        
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,13 +62,13 @@ class ClickViewController: UIViewController {
         mapView.setRegion(region, animated: true)
         mapView.delegate = self
         
+        self.shopNameTV.text = item.companyName //textView1 + image!
+   //     self.shopInfoTV.text = shop.city
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        shopNameTV.text = item.companyName //textView1 + image!
-        shopInfoTV.text = shop.city
     
        guard let item = item else {return}
             textView.text = "\(item.date!)\n\nPrice: £\( item.itemPrice!)\n\n\(item.paymentMethod)"

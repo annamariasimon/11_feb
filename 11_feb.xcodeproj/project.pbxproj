@@ -16,6 +16,7 @@
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
 		CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */; };
 		CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26D244CEDA8002FA6AE /* ShopsL.swift */; };
+		CF95F69D245381350048CC3D /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
 		CFA237F624113330006FF316 /* navbarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F524113330006FF316 /* navbarr.jpg */; };
@@ -67,6 +68,7 @@
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
 		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
+		CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = forgotPasswordViewController.swift; path = ViewControllers/New/forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
 		CFA237F524113330006FF316 /* navbarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarr.jpg; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				CFA23820241182D1006FF316 /* LoginViewController.swift */,
 				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
 				CFA23824241182E5006FF316 /* ClickViewController.swift */,
+				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
 				CFB2A621244F0C55004EE385 /* Shop.swift */,
 				CFA2381E241182C5006FF316 /* Receipt.swift */,
 				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
@@ -252,6 +255,7 @@
 				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
 				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
+				CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -268,7 +272,6 @@
 		CFF603A7241A4F9900757C9A /* NeedWork */ = {
 			isa = PBXGroup;
 			children = (
-				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
 			);
 			path = NeedWork;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
 				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,
+				CF95F69D245381350048CC3D /* forgotPasswordViewController.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -141,5 +141,9 @@ class SignUpViewController: UIViewController {
             present(homeViewController!, animated: true, completion: nil)
             
         }
-
+    
+    @IBAction func dismissAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     }

@@ -30,8 +30,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
         
-        receipts.addDocument(data:["companyName":"Asda", "date": Timestamp(), "itemPrice":Double.random(in: 0...100),
-                                   "paymentMethod":"MasterCard Debit", "shopId":"khsLvNNalOCrVQoX1VRr"])
+        receipts.addDocument(data:["companyName":"Primark", "date": Timestamp(), "itemPrice":Double.random(in: 0...100),
+                                   "paymentMethod":"MasterCard Debit", "shopId":"luGnSsJwJKONgYEFRD1p"])
         { error in
             self.loadReceipts()
         }

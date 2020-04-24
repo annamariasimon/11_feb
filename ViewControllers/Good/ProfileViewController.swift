@@ -18,7 +18,6 @@ class ProfileViewController: UIViewController {
         
         setupUI()
         
-    
     }
     
     func setupUI() {

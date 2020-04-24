@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFM-3s-sQY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yfc-qb-KQi">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -721,13 +721,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="receipts_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-Nx-HSn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-Vd-5tf">
-                                <rect key="frame" x="141" y="172" width="142" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Female" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-Vd-5tf">
+                                <rect key="frame" x="132" y="173" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZGU-p3-Yji"/>
+                                    <constraint firstAttribute="width" constant="150" id="y8G-vm-AQo"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KP-CH-DUu">
                                 <rect key="frame" x="141" y="325" width="142" height="21"/>
@@ -749,6 +749,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Zc-Vd-5tf" firstAttribute="top" secondItem="Joy-jL-SHe" secondAttribute="top" constant="85" id="N4m-iy-13f"/>
+                            <constraint firstItem="2Zc-Vd-5tf" firstAttribute="centerX" secondItem="Joy-jL-SHe" secondAttribute="centerX" id="ucd-6Q-ecJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Joy-jL-SHe"/>
                     </view>
                     <navigationItem key="navigationItem" id="57l-YK-NCN"/>
@@ -915,6 +919,7 @@
     <resources>
         <image name="Back" width="144" height="144"/>
         <image name="Fav Person" width="144" height="144"/>
+        <image name="Female" width="500" height="500"/>
         <image name="Shield" width="144" height="144"/>
         <image name="Shop" width="144" height="144"/>
         <image name="camera" catalog="system" width="128" height="96"/>
@@ -922,8 +927,6 @@
         <image name="menu" width="28" height="28"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="profile.png" width="200" height="200"/>
-        <image name="receipts_background.png" width="297.1199951171875" height="214.32000732421875"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>

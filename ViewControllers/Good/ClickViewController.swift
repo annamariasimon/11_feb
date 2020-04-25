@@ -1,14 +1,28 @@
+//MENU BUTTON MASHOVA
+//MENU WORKING - sopy this into collectionv
+//maybe old menu was better
+
 import UIKit
 import Firebase
 import MapKit
 
 class ClickViewController: UIViewController {
     
+    let transition = SlideInTransition()
+    
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var shopNameTV: UITextView!
     @IBOutlet weak var shopInfoTV: UITextView!
+    
+    @IBAction func didTapMenu(_ sender: Any) {
+        guard let menuViewController = storyboard?.instantiateViewController(identifier:
+             "MenuViewController") else { return }
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
+        present(menuViewController, animated: true)
+    }
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
         
@@ -92,3 +106,15 @@ extension ClickViewController: MKMapViewDelegate{
         print("rendering...")
     }
 }
+    
+    extension ClickViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
+}
+

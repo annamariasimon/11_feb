@@ -1,3 +1,5 @@
+//SHADOWS!!
+
 import UIKit
 
 class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
@@ -5,7 +7,7 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
     var isPresenting = false
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 3.0
+        return 1.0
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -15,7 +17,7 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         let containerView = transitionContext.containerView
         
-        let finalWidth = toViewController.view.bounds.width * 0.7
+        let finalWidth = toViewController.view.bounds.width * 0.55
         let finalHeight = toViewController.view.bounds.height
         
         if isPresenting {
@@ -30,19 +32,16 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
             toViewController.view.transform = CGAffineTransform(translationX: finalWidth, y: 0)
         }
         
-        //animate back off screen
         let identity = {
             fromViewController.view.transform = .identity
         }
         
-        //animation of the transition
         let duration = transitionDuration(using: transitionContext)
         let isCancelled = transitionContext.transitionWasCancelled
-        UIView.animate(withDuration: duration, animations: { self.isPresenting ? transform() : identity()
+        UIView.animate(withDuration: duration, animations: {
+            self.isPresenting ? transform() : identity()
         }) { (_) in
             transitionContext.completeTransition(!isCancelled)
-        
     }
-
 }
 }

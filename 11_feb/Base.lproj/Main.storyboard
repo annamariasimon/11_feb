@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFM-3s-sQY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNT-TA-Qdt">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -92,7 +92,6 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapMenu:" destination="yJP-9s-8kQ" id="p8T-WN-rY8"/>
-                                <segue destination="imM-Yy-YW3" kind="show" id="a66-U7-ZWj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Filter" image="plus" catalog="system" id="Rr7-KX-Ke8">
@@ -174,7 +173,11 @@
                         <barButtonItem title="Item" width="298.66666666666669" id="sE4-Gi-31G"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="SjR-Ep-K9q">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="Vv9-2S-tZA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="Vv9-2S-tZA">
+                            <connections>
+                                <action selector="didTapMenu:" destination="O7t-zN-6g1" id="3Th-Lv-8lN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -339,7 +342,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="MenuViewController" id="imM-Yy-YW3" customClass="MenuViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lfu-iZ-WMD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <sections>
@@ -469,6 +472,50 @@
                                                 <constraint firstItem="msa-dY-mtE" firstAttribute="leading" secondItem="5oq-Y2-NAz" secondAttribute="leading" constant="16" id="iDo-lp-i6f"/>
                                                 <constraint firstItem="foJ-e8-30F" firstAttribute="leading" secondItem="Grx-OK-wRP" secondAttribute="trailing" constant="16" id="vZw-qY-3UC"/>
                                                 <constraint firstItem="Grx-OK-wRP" firstAttribute="leading" secondItem="5oq-Y2-NAz" secondAttribute="leading" constant="16" id="vxn-5J-K8i"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="u9n-fW-gOK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KYj-yi-r5e">
+                                        <rect key="frame" x="0.0" y="330" width="414" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KYj-yi-r5e" id="Dmj-jo-F3t">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel" translatesAutoresizingMaskIntoConstraints="NO" id="hLr-Kt-fLb">
+                                                    <rect key="frame" x="16" y="22" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="0Sl-Q2-mdb"/>
+                                                        <constraint firstAttribute="width" constant="24" id="Fpf-KD-11Z"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot0-et-ifo">
+                                                    <rect key="frame" x="55.999999999999993" y="20.666666666666671" width="76.333333333333314" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imG-Ph-deU">
+                                                    <rect key="frame" x="16" y="66" width="398" height="2"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="ioh-za-XvT"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hLr-Kt-fLb" firstAttribute="leading" secondItem="Dmj-jo-F3t" secondAttribute="leading" constant="16" id="5nX-7e-JDG"/>
+                                                <constraint firstItem="hLr-Kt-fLb" firstAttribute="centerY" secondItem="Dmj-jo-F3t" secondAttribute="centerY" id="60V-8c-ocs"/>
+                                                <constraint firstItem="imG-Ph-deU" firstAttribute="leading" secondItem="Dmj-jo-F3t" secondAttribute="leading" constant="16" id="CVU-Pw-WOH"/>
+                                                <constraint firstItem="ot0-et-ifo" firstAttribute="centerY" secondItem="hLr-Kt-fLb" secondAttribute="centerY" id="Jlh-jX-YWb"/>
+                                                <constraint firstAttribute="bottom" secondItem="imG-Ph-deU" secondAttribute="bottom" id="fOA-fn-4kE"/>
+                                                <constraint firstItem="ot0-et-ifo" firstAttribute="leading" secondItem="hLr-Kt-fLb" secondAttribute="trailing" constant="16" id="or1-1L-E8x"/>
+                                                <constraint firstAttribute="trailing" secondItem="imG-Ph-deU" secondAttribute="trailing" id="z2v-s8-QfF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -862,6 +909,7 @@
     <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
     <resources>
         <image name="Back" width="144" height="144"/>
+        <image name="Cancel" width="144" height="144"/>
         <image name="Fav Person" width="144" height="144"/>
         <image name="Female" width="500" height="500"/>
         <image name="Shield" width="144" height="144"/>

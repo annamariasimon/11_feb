@@ -4,6 +4,7 @@ enum MenuType: Int { // change cases to actual menupoints!
     case profile
     case partners
     case privacyPol
+    case logout
 }
 
 class MenuViewController: UITableViewController {

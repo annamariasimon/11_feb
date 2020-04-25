@@ -217,13 +217,27 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
 
 }
-
+/*
 extension CollectionViewController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UICollectionViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.isPresenting = true
         return transition
     }
     func animationController(forDismissed dismissed: UICollectionViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
+ 
+ //OLD MENU
+ 
+} */
+
+  extension CollectionViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.isPresenting = false
         return transition
     }

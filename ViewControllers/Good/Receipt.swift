@@ -17,12 +17,6 @@ class Receipt {
     var city: String!
     var title: String!
     var postcode: String!
-    
-  /*  struct coordinates {
-        var longitude: CGFloat
-        var latitude: CGFloat
-    }
-    */
     var coordinates: GeoPoint!
     
     var dictionary: [String: Any] {

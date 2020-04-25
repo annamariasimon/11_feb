@@ -10,10 +10,9 @@ class Shop {
     var title: String!
     var postcode: String!
     var address: String!
-    var coordinates: GeoPoint! //store it like this in firebase
-    
+    var coordinates: GeoPoint!
+
     var dictionary: [String: Any] {
         return ["name": name!]
     }
-    
 }

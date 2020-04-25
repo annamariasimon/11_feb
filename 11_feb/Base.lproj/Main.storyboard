@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yfc-qb-KQi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFM-3s-sQY">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -593,7 +593,7 @@
                                 <state key="normal" title="Reset my password"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-Ph-FQT">
-                                <rect key="frame" x="40" y="84" width="334" height="40"/>
+                                <rect key="frame" x="40" y="104" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qbT-EA-lOV"/>
                                 </constraints>
@@ -606,8 +606,8 @@
                             <constraint firstItem="Hli-kb-0GO" firstAttribute="trailing" secondItem="dyH-IN-gHk" secondAttribute="trailing" constant="40" id="IAo-uh-0gO"/>
                             <constraint firstItem="Hli-kb-0GO" firstAttribute="trailing" secondItem="l8b-Ph-FQT" secondAttribute="trailing" constant="40" id="N7E-sq-ZnM"/>
                             <constraint firstItem="dyH-IN-gHk" firstAttribute="leading" secondItem="Hli-kb-0GO" secondAttribute="leading" constant="40" id="RML-fp-KeM"/>
-                            <constraint firstItem="l8b-Ph-FQT" firstAttribute="top" secondItem="Hli-kb-0GO" secondAttribute="top" constant="40" id="ash-W5-zsK"/>
-                            <constraint firstItem="dyH-IN-gHk" firstAttribute="top" secondItem="l8b-Ph-FQT" secondAttribute="bottom" constant="40" id="gfV-RP-cE3"/>
+                            <constraint firstItem="dyH-IN-gHk" firstAttribute="top" secondItem="l8b-Ph-FQT" secondAttribute="bottom" constant="20" id="gfV-RP-cE3"/>
+                            <constraint firstItem="l8b-Ph-FQT" firstAttribute="top" secondItem="Hli-kb-0GO" secondAttribute="top" constant="60" id="lMc-p0-TmF"/>
                             <constraint firstItem="l8b-Ph-FQT" firstAttribute="leading" secondItem="Hli-kb-0GO" secondAttribute="leading" constant="40" id="qRg-kn-Zs3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hli-kb-0GO"/>
@@ -636,7 +636,7 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yjj-7F-bKe">
-                                <rect key="frame" x="40" y="83.999999999999972" width="334" height="370.33333333333326"/>
+                                <rect key="frame" x="40" y="299" width="334" height="370.33333333333326"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykQ-uN-ZmL">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -690,12 +690,22 @@
                                     <action selector="dismissAction:" destination="tD2-Ae-mcC" eventType="touchUpInside" id="77g-Gi-mzP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Female" translatesAutoresizingMaskIntoConstraints="NO" id="mmH-32-oWL">
+                                <rect key="frame" x="139.66666666666666" y="124" width="134.99999999999997" height="135"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="YoV-AM-LR4"/>
+                                    <constraint firstAttribute="width" constant="135" id="mG5-5R-NYL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yjj-7F-bKe" firstAttribute="top" secondItem="cfg-P7-uxW" secondAttribute="top" constant="40" id="BYP-NB-V0q"/>
+                            <constraint firstItem="yjj-7F-bKe" firstAttribute="top" secondItem="mmH-32-oWL" secondAttribute="bottom" constant="40" id="5Di-4H-N0o"/>
+                            <constraint firstItem="mmH-32-oWL" firstAttribute="top" secondItem="cfg-P7-uxW" secondAttribute="top" constant="80" id="9co-Nd-ZPW"/>
                             <constraint firstItem="cfg-P7-uxW" firstAttribute="trailing" secondItem="yjj-7F-bKe" secondAttribute="trailing" constant="40" id="BhU-J3-srE"/>
                             <constraint firstItem="yjj-7F-bKe" firstAttribute="leading" secondItem="cfg-P7-uxW" secondAttribute="leading" constant="40" id="ldw-Ea-fkn"/>
+                            <constraint firstItem="mmH-32-oWL" firstAttribute="centerX" secondItem="0Ax-Bu-VfA" secondAttribute="centerX" id="tz1-mH-tce"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cfg-P7-uxW"/>
                     </view>
@@ -706,6 +716,7 @@
                         <outlet property="firstNameTextField" destination="ykQ-uN-ZmL" id="zie-aL-BxQ"/>
                         <outlet property="lastNameTextField" destination="qlW-iu-Gm0" id="HQV-om-0BY"/>
                         <outlet property="passwordTextField" destination="US7-o9-78a" id="MWI-og-uIZ"/>
+                        <outlet property="profileImage" destination="mmH-32-oWL" id="wmy-ar-u6Y"/>
                         <outlet property="signUpButton" destination="MrK-QM-ElI" id="meC-xH-JjT"/>
                     </connections>
                 </viewController>
@@ -779,7 +790,7 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yMm-X7-ovj">
-                                <rect key="frame" x="40" y="84" width="334" height="280.33333333333331"/>
+                                <rect key="frame" x="40" y="104" width="334" height="280.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-uD-2t8">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -832,7 +843,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yMm-X7-ovj" firstAttribute="top" secondItem="oyN-VW-w5j" secondAttribute="top" constant="40" id="IK7-Jc-mqh"/>
+                            <constraint firstItem="yMm-X7-ovj" firstAttribute="top" secondItem="oyN-VW-w5j" secondAttribute="top" constant="60" id="IK7-Jc-mqh"/>
                             <constraint firstItem="oyN-VW-w5j" firstAttribute="trailing" secondItem="yMm-X7-ovj" secondAttribute="trailing" constant="40" id="K6l-H2-Vb2"/>
                             <constraint firstItem="yMm-X7-ovj" firstAttribute="leading" secondItem="oyN-VW-w5j" secondAttribute="leading" constant="40" id="sPB-L5-LPk"/>
                         </constraints>

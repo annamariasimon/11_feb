@@ -1,6 +1,6 @@
 import UIKit
 
-extension ProfileViewController {
+extension SignUpViewController {
     
     func setupAvatar() {
          profileImage.layer.cornerRadius = 5 //CHANGE
@@ -20,14 +20,16 @@ extension ProfileViewController {
     
 }
 
-extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            image = imageSelected
             profileImage.image = imageSelected
         }
         
         if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            image = imageOriginal
             profileImage.image = imageOriginal
         }
         picker.dismiss(animated: true, completion: nil)

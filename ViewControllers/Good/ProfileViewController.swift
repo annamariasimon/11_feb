@@ -4,24 +4,22 @@ import Firebase
 
 class ProfileViewController: UIViewController {
     
-// var item: Receipt!
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
+    
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
-       // guard let item = item else {return}
-      //  usernameLabel.text = "hello"
-        
         setupUI()
         
     }
     
     func setupUI() {
-        setupAvatar()
+//        setupAvatar()
     }
     
 }

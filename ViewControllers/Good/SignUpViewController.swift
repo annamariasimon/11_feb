@@ -1,6 +1,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseStorage
 
 class SignUpViewController: UIViewController {
     
@@ -10,6 +11,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    var image: UIImage? = nil
     
      override func viewDidLoad() {
             super.viewDidLoad()
@@ -17,6 +21,7 @@ class SignUpViewController: UIViewController {
             // Do any additional setup after loading the view.
             
             setUpElements()
+            setupUI()
         }
         
         func setUpElements() {
@@ -71,8 +76,16 @@ class SignUpViewController: UIViewController {
         }
         
       
-    @IBAction func signUpTapped(_ sender: Any) 
-    {
+    @IBAction func signUpTapped(_ sender: Any) {
+        
+        guard let imageSelected = self.image else {
+            print("Avatar is nil")
+            return
+        }
+        
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+        }
             
             //validate the fields
             let error = validateFields()
@@ -108,6 +121,19 @@ class SignUpViewController: UIViewController {
                       let db = Firestore.firestore()
                         
                   //      db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName, "uid": result!.user.uid]) { (error) in
+                        let storageRef = Storage.storage().reference(forURL: "gs://receipt-app-bba11.appspot.com")
+                        let storageProfileRef = storageRef.child("profile").child(result!.user.uid)
+                        
+                        let metadata = StorageMetadata()
+                        metadata.contentType = "image/jpg"
+                        storageProfileRef.putData(imageData, metadata: metadata, completion:
+                            { (StorageMetaData, error) in
+                                if error != nil {
+                                    print(error?.localizedDescription)
+                                    return
+                                }
+                                
+                                })
                         
                         
                         db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName]) { (error) in
@@ -145,5 +171,9 @@ class SignUpViewController: UIViewController {
     @IBAction func dismissAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+     func setupUI() {
+           setupAvatar()
+       }
     
     }

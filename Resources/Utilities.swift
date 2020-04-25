@@ -43,10 +43,5 @@ class Utilities {
         return passwordTest.evaluate(with: password)
     }
 
- /*   static func isEmailValid(_ email : String) -> Bool {
-          
-          let emailTest = NSPredicate(format: "SELF MATCHES %@", "@")
-          return emailTest.evaluate(with: email)
-      } */
     
 }

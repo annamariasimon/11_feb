@@ -1,11 +1,3 @@
-//
-//  forgotPasswordViewController.swift
-//  11_feb
-//
-//  Created by Annamaria Simon on 24/04/2020.
-//  Copyright © 2020 Annamaria Simon. All rights reserved.
-//
-
 import UIKit
 
 class forgotPasswordViewController: UIViewController {
@@ -33,5 +25,10 @@ class forgotPasswordViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-
+    @IBAction func resetPasswordDidTapped(_ sender: Any) {
+     //   guard let email = emailTextField.text, email != "" else {
+            
+      //  }
+    }
+    
 }

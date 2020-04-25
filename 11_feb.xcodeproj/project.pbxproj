@@ -69,7 +69,7 @@
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
 		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
-		CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = forgotPasswordViewController.swift; path = ViewControllers/New/forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
+		CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = forgotPasswordViewController.swift; path = ViewControllers/Other/forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		CF95F69E245392CA0048CC3D /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extProfileViewController.swift; path = ViewControllers/New/extProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
@@ -258,7 +258,6 @@
 				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
 				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
-				CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -268,6 +267,7 @@
 			children = (
 				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
+				CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";

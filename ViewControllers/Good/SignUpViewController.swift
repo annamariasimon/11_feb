@@ -17,8 +17,6 @@ class SignUpViewController: UIViewController {
     
      override func viewDidLoad() {
             super.viewDidLoad()
-
-            // Do any additional setup after loading the view.
             
             setUpElements()
             setupUI()
@@ -27,20 +25,16 @@ class SignUpViewController: UIViewController {
         func setUpElements() {
             
             errorLabel.alpha = 0
-            
-            //Style the elements
-            
+        
             Utilities.styleTextField(firstNameTextField)
             Utilities.styleTextField(lastNameTextField)
             Utilities.styleTextField(emailTextField)
             Utilities.styleTextField(passwordTextField)
             Utilities.styleFilledButton(signUpButton)
         }
-    //check the fields & validate that the data is correct, if everything's correct, this method turns 0 otherwise error messgage
         
         func validateFields() -> String? {
-            
-            //check that all fields are filled in
+     
             if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
                 lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
                 emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -50,27 +44,16 @@ class SignUpViewController: UIViewController {
                 
             }
             
-      /*      //check if the password is secure
-            let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //check if the password is secure
+  /*          let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             if  Utilities.isPasswordValid(cleanedPassword) == false {
                 //password isn't secure enough
                 
             return "Please make sure your password is at least 8 characters, contains a special character and a number."
                 
-            }
-            */
-         /*
-             //SAME BUT FOR EMAIL - create a regular expression for it first
+            } */
             
-          let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                      
-                      if  Utilities.isEmailValid(cleanedPassword) == false {
-                          //password isn't secure enough
-                          
-                      return "Please make sure your password is at least 8 characters, contains a special character and a number."
-                          
-                      } */
             
             return nil
         }
@@ -117,10 +100,8 @@ class SignUpViewController: UIViewController {
                         
                     else {
                         
-                        //user was created successfully, now store the first and last name
                       let db = Firestore.firestore()
                         
-                  //      db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName, "uid": result!.user.uid]) { (error) in
                         let storageRef = Storage.storage().reference(forURL: "gs://receipt-app-bba11.appspot.com")
                         let storageProfileRef = storageRef.child("profile").child(result!.user.uid)
                         
@@ -133,26 +114,29 @@ class SignUpViewController: UIViewController {
                                     return
                                 }
                                 
+                                storageProfileRef.downloadURL(completion: { (url, error) in
+                                    if let metaImageURL = url?.absoluteString {
+                                        print(metaImageURL)
+                                        
+                                        db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName, "profileImageURL":metaImageURL]) { (error) in
+                                                                 
+                                                                 if error != nil {
+                                                                     print(error?.localizedDescription)
+                                                                     self.showError("Error saving user data")
+                                                                 }
+                                                             }
+                                                     
+                                                      self.transitionToHome()
+                                    }
+                                })
+                                
                                 })
                         
-                        
-                        db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName]) { (error) in
-                            
-                            if error != nil {
-                                print(error?.localizedDescription)
-                                self.showError("Error saving user data")
-                            }
-                        }
-                        
-                           //transition to the home screen
-                 self.transitionToHome()
+                     
                         
                     }
                 }
-                
             }
-            
-         
         }
         
         func showError(_ message:String){

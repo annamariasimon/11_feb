@@ -7,8 +7,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     private let reuseIdentifier = "Cell"
     
-  //  let datan = DataLoader().ShopsData
-    
     var itemSize: CGSize = CGSize(width: 0, height: 0)
     var items: [Receipt] = []
     var currentItem: Receipt?

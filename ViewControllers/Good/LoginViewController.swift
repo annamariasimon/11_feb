@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -25,7 +26,7 @@ class LoginViewController: UIViewController {
             Utilities.styleFilledButton(loginButton)
             
         }
- /*   func validateFields() -> String? {
+    func validateFields() -> String? {
                
                //check that all fields are filled in
                if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -33,21 +34,21 @@ class LoginViewController: UIViewController {
                    
                    return "Please fill in all fields."
                    
-        } } */
-
-        //create function from login button - KYLE
+        }
+        return nil
+    }
 
     
     @IBAction func loginTapped(_ sender: Any) {
     
             
-      /*  //validate the fields
+        //validate the fields
                   let error = validateFields()
                   
                   if error != nil {
                       //There's something wrong in the fields, show error message
-                      showError(error!)
-                  } */
+                showError(error!)
+                  } else {
         
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -70,12 +71,18 @@ class LoginViewController: UIViewController {
                     
                 }
                 
-            
+        }
         }
         
         }
     @IBAction func dismissAction(_ sender: Any) {
          navigationController?.popViewController(animated: true)
     }
+    
+    func showError(_ message:String){
+               errorLabel.text = message
+               errorLabel.alpha = 1
+               
+           }
     
     }

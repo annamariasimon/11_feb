@@ -7,6 +7,9 @@ class map2ViewController: UIViewController {
     
     private let locationManager = CLLocationManager()
     private var currentCoordinate: CLLocationCoordinate2D?
+    
+/*    private var destinations:[MKPointAnnotation] = []
+    private var currentRoute: MKRoute? */
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -48,43 +51,52 @@ class map2ViewController: UIViewController {
         
         let asdaLondonAnnotation = MKPointAnnotation()
         asdaLondonAnnotation.title = "Asda"     //shop.newshopid.title
-        asdaLondonAnnotation.subtitle = "Supermarket"
+        asdaLondonAnnotation.subtitle = "London, NW9 0AS"
         asdaLondonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 51.59465, longitude: -0.261743) //THESE COORDINATES SHOULD COME FROM THE SHOP INFO LIKE shop.asdashopId.coordinates.latitude and longtitudeű
         
         let primarkLondonAnnotation = MKPointAnnotation()
         primarkLondonAnnotation.title = "Primark"
-        primarkLondonAnnotation.subtitle = "Clothing"
+        primarkLondonAnnotation.subtitle = "London, W1D 1AU"
         primarkLondonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 51.516576, longitude: -0.131099)
         
         let asdaBournemouthAnnotation = MKPointAnnotation()
         asdaBournemouthAnnotation.title = "Asda"
-        asdaBournemouthAnnotation.subtitle = "Supermarket"
+        asdaBournemouthAnnotation.subtitle = "Bournemouth, BH8 8DL"
         asdaBournemouthAnnotation.coordinate = CLLocationCoordinate2D(latitude: 50.72583, longitude: -1.86502)
         
         let tescoMetroBmouthAnnotation = MKPointAnnotation()
         tescoMetroBmouthAnnotation.title = "Tesco"
-        tescoMetroBmouthAnnotation.subtitle = "Supermarket"
+        tescoMetroBmouthAnnotation.subtitle = "Bournemouth, BH2 6DT"
         tescoMetroBmouthAnnotation.coordinate = CLLocationCoordinate2D(latitude: 50.72131, longitude: -1.88082)
         
         let wilkoBmouthAnnotation = MKPointAnnotation()
         wilkoBmouthAnnotation.title = "Wilko"
-        wilkoBmouthAnnotation.subtitle = "Hardware"
+        wilkoBmouthAnnotation.subtitle = "Bournemouth, BH1 1EN"
         wilkoBmouthAnnotation.coordinate = CLLocationCoordinate2D(latitude: 50.721802, longitude: -1.875809)
         
         let bootsSouthamptonAnnotation = MKPointAnnotation()
         bootsSouthamptonAnnotation.title = "Boots"
-        bootsSouthamptonAnnotation.subtitle = "Health and beauty"
+        bootsSouthamptonAnnotation.subtitle = "Southampton, SO14 7DX"
         bootsSouthamptonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 50.903525, longitude: -1.404396)
         
         let pretLondonAnnotation = MKPointAnnotation()
         pretLondonAnnotation.title = "Pret A Manger"
-        pretLondonAnnotation.subtitle = "Sandwich shop"
+        pretLondonAnnotation.subtitle = "London, SW1E 5NA"
         pretLondonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 51.496396, longitude: -0.142225)
         
         let mcDonaldsBigBen = MKPointAnnotation()
         mcDonaldsBigBen.title = "McDonald's"
-        mcDonaldsBigBen.subtitle = "Fast food restaurant"
+        mcDonaldsBigBen.subtitle = "London, SE1 7PB"
         mcDonaldsBigBen.coordinate = CLLocationCoordinate2D(latitude: 51.501414, longitude: -0.119631)
+        
+  /*      destinations.append(asdaLondonAnnotation)
+        destinations.append(primarkLondonAnnotation)
+        destinations.append(asdaBournemouthAnnotation)
+        destinations.append(tescoMetroBmouthAnnotation)
+        destinations.append(wilkoBmouthAnnotation)
+        destinations.append(bootsSouthamptonAnnotation)
+        destinations.append(pretLondonAnnotation)
+        destinations.append(mcDonaldsBigBen) */
         
         mapView.addAnnotation(asdaLondonAnnotation)
         mapView.addAnnotation(primarkLondonAnnotation)
@@ -97,6 +109,29 @@ class map2ViewController: UIViewController {
         
     }
     
+  /*  private func constructRoute(userLocation: CLLocationCoordinate2D) {
+        let directionsRequest = MKDirections.Request()
+        directionsRequest.source = MKMapItem(placemark: MKPlacemark(coordinate: userLocation))
+        directionsRequest.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinations[0].coordinate))
+        directionsRequest.requestsAlternateRoutes = true
+        directionsRequest.transportType = .walking
+        
+        let directions = MKDirections(request: directionsRequest)
+        
+        directions.calculate { [weak self] (directionsResponse, error) in
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let response = directionsResponse, response.routes.count > 0 {
+                strongSelf.currentRoute = response.routes[0]
+                
+                strongSelf.mapView.addOverlay(response.routes[0].polyline)
+                strongSelf.mapView.setVisibleMapRect(response.routes[0].polyline.boundingMapRect, animated: true)
+            }
+        }
+    }
+    */
 }
 
 extension map2ViewController: CLLocationManagerDelegate {
@@ -106,6 +141,7 @@ extension map2ViewController: CLLocationManagerDelegate {
         if currentCoordinate == nil {
             zoomToLatestLocation(with: latestLocation.coordinate)
             addAnnotations()
+     //       constructRoute(userLocation: latestLocation.coordinate)
         }
         currentCoordinate = latestLocation.coordinate
     }
@@ -118,6 +154,20 @@ extension map2ViewController: CLLocationManagerDelegate {
 }
 
 extension map2ViewController: MKMapViewDelegate {
+    /*
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        guard let currentRoute = currentRoute else {
+             return MKOverlayRenderer()
+        }
+        
+        let polyLineRenderer = MKPolylineRenderer(polyline: currentRoute.polyline)
+        polyLineRenderer.strokeColor = UIColor.black
+        polyLineRenderer.lineWidth = 4
+        
+        return polyLineRenderer
+        
+    }
+    */
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "AnnotationView")

@@ -17,8 +17,12 @@ class ClickViewController: UIViewController {
     @IBOutlet weak var shopInfoTV: UITextView!
     
     @IBAction func didTapMenu(_ sender: Any) {
-        guard let menuViewController = storyboard?.instantiateViewController(identifier:
-             "MenuViewController") else { return }
+       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
+               else
+              {  return }
+               menuViewController.didTapMenuType = { menuType in
+                   print(menuType)
+               }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self
         present(menuViewController, animated: true)

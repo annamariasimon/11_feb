@@ -16,14 +16,21 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     let transition = SlideInTransition()
     
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
-       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController")
+       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
         else
        {  return }
+        menuViewController.didTapMenuType = { menuType in
+            self.transitionToNew(menuType)
+        }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self
     present(menuViewController, animated: true)
     }
     
+    func transitionToNew(_ menuType: MenuType) {
+        let titleMenu = String(describing: menuType).capitalized
+        self.title = titleMenu
+    }
     
     @IBAction func add(_ sender: Any) {
         let receipts = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")

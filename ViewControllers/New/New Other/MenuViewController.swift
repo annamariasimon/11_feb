@@ -2,12 +2,14 @@ import UIKit
 
 enum MenuType: Int { // change cases to actual menupoints!
     case profile
-    case partners
-    case privacyPol
+    case shops
+    case privacypol
     case logout
 }
 
 class MenuViewController: UITableViewController {
+    
+    var didTapMenuType: ((MenuType) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +19,9 @@ class MenuViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let menuType = MenuType(rawValue: indexPath.row) else { return }
-        dismiss(animated: true) {
+        dismiss(animated: true) { [weak self] in
             print("Dismissing: \(menuType)")
+            self?.didTapMenuType?(menuType)
         }
     }
    

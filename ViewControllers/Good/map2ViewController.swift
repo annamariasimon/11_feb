@@ -11,6 +11,13 @@ class map2ViewController: UIViewController {
 /*    private var destinations:[MKPointAnnotation] = []
     private var currentRoute: MKRoute? */
 
+    @IBAction func changeMapType(_ sender: Any) {
+        if (sender as AnyObject).selectedSegmentIndex == 0 {
+                   mapView.mapType = .standard
+               } else {
+                   mapView.mapType = .satellite
+               }
+    }
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -41,7 +48,7 @@ class map2ViewController: UIViewController {
     }
     
     private func zoomToLatestLocation(with coordinate: CLLocationCoordinate2D) {
-        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 6500, longitudinalMeters: 6500)
         mapView.setRegion(zoomRegion, animated: true)
     }
 

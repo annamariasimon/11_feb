@@ -41,6 +41,7 @@
 		CFB2F7B323F314B00084B96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7B123F314B00084B96A /* LaunchScreen.storyboard */; };
 		CFB2F7BE23F317C30084B96A /* Untitled-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7BD23F317C30084B96A /* Untitled-2.png */; };
 		CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7C223F32E9B0084B96A /* receipts_background.png */; };
+		CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */; };
 		CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */; };
 		CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */; };
 		CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */; };
@@ -97,6 +98,7 @@
 		CFB2F7B423F314B00084B96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFB2F7BD23F317C30084B96A /* Untitled-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-2.png"; path = "for_splashscreen/Untitled-2.png"; sourceTree = SOURCE_ROOT; };
 		CFB2F7C223F32E9B0084B96A /* receipts_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receipts_background.png; path = for_splashscreen/receipts_background.png; sourceTree = SOURCE_ROOT; };
+		CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -248,6 +250,8 @@
 				CF85D56424437813008D4377 /* shopsData.swift */,
 				CF85D56624437969008D4377 /* DataLoader.swift */,
 				CF85D56824438148008D4377 /* DataTableViewController.swift */,
+				CF174A46245708F700442BD0 /* map2ViewController.swift */,
+				CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */,
 			);
 			path = Good;
 			sourceTree = "<group>";
@@ -257,10 +261,9 @@
 			children = (
 				CFDC2DAC24228F25001B0D55 /* New Other */,
 				CF85D56A24438A83008D4377 /* ScannerViewController.swift */,
-				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
 				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
-				CF174A46245708F700442BD0 /* map2ViewController.swift */,
+				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
 				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,
 				CF95F69D245381350048CC3D /* forgotPasswordViewController.swift in Sources */,
+				CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,7 +43,7 @@
 		<string>MKDirectionsModeSubway</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Please allow access to the camera</string>
+	<string>Please allow access to the camera for QR code scanning</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

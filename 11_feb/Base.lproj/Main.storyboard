@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ovn-33-X4M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNT-TA-Qdt">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -70,19 +70,19 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="Network" image="person.3" catalog="system" width="103.66666666666667" id="jFc-dU-rtt">
+                        <barButtonItem title="Network" image="Message" width="129" id="jFc-dU-rtt">
                             <connections>
                                 <segue destination="yyR-KM-tz6" kind="show" id="tkb-JG-vfm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Home" image="camera" catalog="system" width="205.66666666666669" id="rR5-Xv-6Ut">
+                        <barButtonItem title="Home" image="News" width="205.66666666666669" id="rR5-Xv-6Ut">
                             <connections>
-                                <segue destination="Ubi-gb-qdd" kind="show" id="959-uf-Iqw"/>
+                                <segue destination="qJv-a0-3gF" kind="show" id="1ND-Of-TGW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="News" image="doc.append" catalog="system" width="313.66666666666669" id="VHs-nf-WeO">
+                        <barButtonItem title="Location" image="Location" width="313.66666666666669" id="VHs-nf-WeO">
                             <connections>
-                                <segue destination="hgy-EC-hcR" kind="show" id="vyp-3r-EBa"/>
+                                <segue destination="ovn-33-X4M" kind="show" id="2aI-IY-xgF"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -95,6 +95,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Filter" image="plus" catalog="system" id="Rr7-KX-Ke8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="add:" destination="yJP-9s-8kQ" id="9TY-2G-Xzi"/>
                             </connections>
@@ -168,17 +169,11 @@
                         <viewLayoutGuide key="safeArea" id="Zdn-yO-Ted"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" width="190.66666666666669" id="3th-Mq-6gy"/>
-                        <barButtonItem title="Item" image="camera" catalog="system" width="537.66666666666674" id="xO5-UU-FVn"/>
-                        <barButtonItem title="Item" width="298.66666666666669" id="sE4-Gi-31G"/>
+                        <barButtonItem title="Item" image="Message" width="125" id="3th-Mq-6gy"/>
+                        <barButtonItem title="Item" image="News" width="591.66666666666674" id="xO5-UU-FVn"/>
+                        <barButtonItem title="Item" image="Location" width="298.66666666666669" id="sE4-Gi-31G"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="SjR-Ep-K9q">
-                        <barButtonItem key="rightBarButtonItem" title="Share" image="square.and.arrow.up" catalog="system" id="Vv9-2S-tZA">
-                            <connections>
-                                <action selector="didTapMenu:" destination="O7t-zN-6g1" id="3Th-Lv-8lN"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="SjR-Ep-K9q"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="A10-qg-nMC" id="hvS-LK-lKG"/>
@@ -196,36 +191,70 @@
             <objects>
                 <viewController id="ovn-33-X4M" customClass="map2ViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SRg-9I-nWe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh7-N0-log">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ffr-WP-xOE">
+                                <rect key="frame" x="130" y="20" width="154" height="32"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMapType:" destination="ovn-33-X4M" eventType="valueChanged" id="RM4-KH-Ngu"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kh7-N0-log" firstAttribute="top" secondItem="SRg-9I-nWe" secondAttribute="top" id="0Uu-E4-ORn"/>
+                            <constraint firstItem="2o2-mW-luz" firstAttribute="trailing" secondItem="ffr-WP-xOE" secondAttribute="trailing" constant="130" id="5ve-LX-Lgn"/>
+                            <constraint firstItem="ffr-WP-xOE" firstAttribute="top" secondItem="2o2-mW-luz" secondAttribute="top" constant="20" id="DYS-lK-34M"/>
                             <constraint firstItem="kh7-N0-log" firstAttribute="leading" secondItem="2o2-mW-luz" secondAttribute="leading" id="c6j-VM-EUp"/>
                             <constraint firstAttribute="bottom" secondItem="kh7-N0-log" secondAttribute="bottom" id="miI-JC-ds5"/>
                             <constraint firstItem="kh7-N0-log" firstAttribute="trailing" secondItem="2o2-mW-luz" secondAttribute="trailing" id="oBz-cz-0Xa"/>
+                            <constraint firstItem="ffr-WP-xOE" firstAttribute="leading" secondItem="2o2-mW-luz" secondAttribute="leading" constant="130" id="uPn-0p-H93"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2o2-mW-luz"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" image="Message" id="cVf-Pe-YLV"/>
+                        <barButtonItem title="Item" image="News" id="FSz-50-5AM"/>
+                        <barButtonItem title="Item" image="Location" id="5YV-ZX-tpQ"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="LwU-VM-asX"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="kh7-N0-log" id="fTx-lB-IWs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7Z-a2-7h4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6176.811594202899" y="370.98214285714283"/>
+            <point key="canvasLocation" x="4410" y="1146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="COQ-ZS-jif">
+            <objects>
+                <navigationController id="sRe-4f-QkM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dn8-Es-3wz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGz-eX-9AH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5811" y="370"/>
         </scene>
         <!--Shop Location View Controller-->
         <scene sceneID="6OI-J4-xyn">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="hgy-EC-hcR" customClass="shopLocationViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oyg-yM-yAP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpR-h6-ic2">
@@ -248,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWJ-Y6-q9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279.7101449275369" y="1139.7321428571429"/>
+            <point key="canvasLocation" x="5722" y="1140"/>
         </scene>
         <!--Data Table View Controller-->
         <scene sceneID="RTa-y0-zhi">
@@ -284,7 +313,7 @@
             <objects>
                 <viewController id="Ubi-gb-qdd" customClass="ScannerViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="45I-jr-1CO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gcJ-rx-mIf"/>
@@ -293,7 +322,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdD-ly-3hT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3503" y="1146"/>
+            <point key="canvasLocation" x="4625" y="1999"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="RF0-gT-9AS">
+            <objects>
+                <viewController id="qJv-a0-3gF" customClass="QRCodeViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cSS-Yo-eKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5W9-QU-L82">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-zt-AjJ">
+                                        <rect key="frame" x="72" y="610" width="271" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YNL-Jr-0q3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dUx-v7-oE2"/>
+                    <connections>
+                        <outlet property="previewView" destination="5W9-QU-L82" id="SWN-oj-oto"/>
+                        <outlet property="resultLabel" destination="LLi-zt-AjJ" id="Oev-jl-bbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puO-Ps-sEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502.898550724638" y="1144.4196428571429"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Vdb-Sf-8kL">
@@ -309,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9F-7l-DJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5316" y="1140"/>
+            <point key="canvasLocation" x="7614" y="1140"/>
         </scene>
         <!--Receipt View Controller-->
         <scene sceneID="ect-wo-RVI">
@@ -653,7 +719,7 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yjj-7F-bKe">
-                                <rect key="frame" x="40" y="299" width="334" height="370.33333333333326"/>
+                                <rect key="frame" x="40" y="319" width="334" height="370.33333333333326"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykQ-uN-ZmL">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -708,17 +774,17 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Female" translatesAutoresizingMaskIntoConstraints="NO" id="mmH-32-oWL">
-                                <rect key="frame" x="139.66666666666666" y="124" width="134.99999999999997" height="135"/>
+                                <rect key="frame" x="129.66666666666666" y="124" width="154.99999999999997" height="155"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="YoV-AM-LR4"/>
-                                    <constraint firstAttribute="width" constant="135" id="mG5-5R-NYL"/>
+                                    <constraint firstAttribute="height" constant="155" id="YoV-AM-LR4"/>
+                                    <constraint firstAttribute="width" constant="155" id="mG5-5R-NYL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yjj-7F-bKe" firstAttribute="top" secondItem="mmH-32-oWL" secondAttribute="bottom" constant="40" id="5Di-4H-N0o"/>
+                            <constraint firstItem="yjj-7F-bKe" firstAttribute="top" secondItem="mmH-32-oWL" secondAttribute="bottom" constant="40" id="5x3-Z4-4ZW"/>
                             <constraint firstItem="mmH-32-oWL" firstAttribute="top" secondItem="cfg-P7-uxW" secondAttribute="top" constant="80" id="9co-Nd-ZPW"/>
                             <constraint firstItem="cfg-P7-uxW" firstAttribute="trailing" secondItem="yjj-7F-bKe" secondAttribute="trailing" constant="40" id="BhU-J3-srE"/>
                             <constraint firstItem="yjj-7F-bKe" firstAttribute="leading" secondItem="cfg-P7-uxW" secondAttribute="leading" constant="40" id="ldw-Ea-fkn"/>
@@ -941,13 +1007,12 @@
         <image name="Cancel" width="144" height="144"/>
         <image name="Fav Person" width="144" height="144"/>
         <image name="Female" width="500" height="500"/>
+        <image name="Location" width="144" height="144"/>
+        <image name="Message" width="144" height="144"/>
+        <image name="News" width="144" height="144"/>
         <image name="Shield" width="144" height="144"/>
         <image name="Shop" width="144" height="144"/>
-        <image name="camera" catalog="system" width="128" height="96"/>
-        <image name="doc.append" catalog="system" width="115" height="128"/>
         <image name="menu" width="28" height="28"/>
-        <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>

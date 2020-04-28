@@ -13,6 +13,11 @@ class Shop {
     var coordinates: GeoPoint!
 
     var dictionary: [String: Any] {
-        return ["name": name!]
+        return ["name": name!,
+                "category": category!,
+                "city": city!,
+                "title": title!,
+                "postcode": postcode!,
+                "address": address!]
     }
 }

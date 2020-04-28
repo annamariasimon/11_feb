@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Map needs access to your location</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Map needs access to your location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDocumentTypes</key>
@@ -37,6 +33,7 @@
 	<true/>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
+		<string>MKDirectionsModeBike</string>
 		<string>MKDirectionsModeBus</string>
 		<string>MKDirectionsModeCar</string>
 		<string>MKDirectionsModePedestrian</string>
@@ -44,6 +41,10 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow access to the camera for QR code scanning</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Map needs access to your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Map needs access to your location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

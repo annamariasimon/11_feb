@@ -14,6 +14,10 @@
 		CF85D56724437969008D4377 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56624437969008D4377 /* DataLoader.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
 		CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56A24438A83008D4377 /* ScannerViewController.swift */; };
+		CF8C5B3E24583F84005E7077 /* readFirestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */; };
+		CF8C5B40245847AF005E7077 /* shopsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */; };
+		CF8C5B42245849DB005E7077 /* sCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */; };
+		CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B4324584FBC005E7077 /* newTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
 		CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */; };
 		CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26D244CEDA8002FA6AE /* ShopsL.swift */; };
@@ -69,6 +73,10 @@
 		CF85D56624437969008D4377 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		CF85D56A24438A83008D4377 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readFirestoreViewController.swift; sourceTree = "<group>"; };
+		CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsCollectionViewController.swift; sourceTree = "<group>"; };
+		CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF8C5B4324584FBC005E7077 /* newTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
 		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
@@ -264,6 +272,10 @@
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
 				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
 				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
+				CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */,
+				CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */,
+				CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */,
+				CF8C5B4324584FBC005E7077 /* newTableViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -425,10 +437,12 @@
 				CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
+				CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
+				CF8C5B40245847AF005E7077 /* shopsCollectionViewController.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
 				CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
@@ -438,7 +452,9 @@
 				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */,
+				CF8C5B3E24583F84005E7077 /* readFirestoreViewController.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
+				CF8C5B42245849DB005E7077 /* sCollectionViewCell.swift in Sources */,
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
 				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,

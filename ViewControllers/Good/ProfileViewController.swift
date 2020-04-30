@@ -28,6 +28,7 @@ class ProfileViewController: UIViewController {
      override func viewDidLoad() {
          super.viewDidLoad()
          
+        
          userInfoDocumentRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
          
          receiptDataCollectionRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
@@ -52,6 +53,8 @@ class ProfileViewController: UIViewController {
                      
                      let url = URL(string: avatarURL)
                      self.profileImage.kf.setImage(with: url)
+                    
+                    self.profileImage.layer.cornerRadius = 5
                  }
                  }
              }
@@ -86,8 +89,3 @@ class ProfileViewController: UIViewController {
          
              } }
      
-    
-    func setupUI() {
-//        setupAvatar()
-    }
-    

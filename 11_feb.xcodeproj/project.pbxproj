@@ -16,15 +16,12 @@
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
 		CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B4324584FBC005E7077 /* newTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
-		CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */; };
-		CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26D244CEDA8002FA6AE /* ShopsL.swift */; };
 		CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69E245392CA0048CC3D /* extProfileViewController.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
 		CFA237F624113330006FF316 /* navbarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F524113330006FF316 /* navbarr.jpg */; };
 		CFA237F824116BFB006FF316 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA237F724116BFB006FF316 /* Constants.swift */; };
 		CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA238192411829C006FF316 /* SignUpViewController.swift */; };
-		CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2381C241182BE006FF316 /* ReceiptViewController.swift */; };
 		CFA2381F241182C5006FF316 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2381E241182C5006FF316 /* Receipt.swift */; };
 		CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23820241182D1006FF316 /* LoginViewController.swift */; };
 		CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23822241182DC006FF316 /* CollectionViewController.swift */; };
@@ -42,6 +39,8 @@
 		CFB2F7C323F32E9B0084B96A /* receipts_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F7C223F32E9B0084B96A /* receipts_background.png */; };
 		CFCF47F5245B3A8F00C394E9 /* listShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47F4245B3A8F00C394E9 /* listShops.swift */; };
 		CFCF47F9245B3D5900C394E9 /* sTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */; };
+		CFCF47FB245B402400C394E9 /* userStatisticsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */; };
+		CFCF47FD245B416A00C394E9 /* profileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47FC245B416A00C394E9 /* profileClass.swift */; };
 		CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */; };
 		CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */; };
 		CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */; };
@@ -72,15 +71,12 @@
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		CF8C5B4324584FBC005E7077 /* newTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
-		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
 		CF95F69E245392CA0048CC3D /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extProfileViewController.swift; path = ViewControllers/New/extProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
 		CFA237F524113330006FF316 /* navbarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarr.jpg; sourceTree = "<group>"; };
 		CFA237F724116BFB006FF316 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFA238192411829C006FF316 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CFA2381C241182BE006FF316 /* ReceiptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		CFA2381E241182C5006FF316 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		CFA23820241182D1006FF316 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CFA23822241182DC006FF316 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +96,8 @@
 		CFB2F7C223F32E9B0084B96A /* receipts_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receipts_background.png; path = for_splashscreen/receipts_background.png; sourceTree = SOURCE_ROOT; };
 		CFCF47F4245B3A8F00C394E9 /* listShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listShops.swift; sourceTree = "<group>"; };
 		CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sTableViewCell.swift; sourceTree = "<group>"; };
+		CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStatisticsClass.swift; sourceTree = "<group>"; };
+		CFCF47FC245B416A00C394E9 /* profileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileClass.swift; sourceTree = "<group>"; };
 		CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -254,9 +252,11 @@
 				CF85D56824438148008D4377 /* DataTableViewController.swift */,
 				CFCF47F4245B3A8F00C394E9 /* listShops.swift */,
 				CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */,
-				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
 				CF85D56624437969008D4377 /* DataLoader.swift */,
 				CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */,
+				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
+				CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */,
+				CFCF47FC245B416A00C394E9 /* profileClass.swift */,
 			);
 			path = Good;
 			sourceTree = "<group>";
@@ -265,9 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				CFDC2DAC24228F25001B0D55 /* New Other */,
-				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
-				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
-				CF8C5B4324584FBC005E7077 /* newTableViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -275,8 +272,8 @@
 		CFF603A6241A4F4700757C9A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CF8C5B4324584FBC005E7077 /* newTableViewController.swift */,
 				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
-				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -425,9 +422,9 @@
 				CFCF47F9245B3D5900C394E9 /* sTableViewCell.swift in Sources */,
 				CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */,
 				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
-				CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
+				CFCF47FB245B402400C394E9 /* userStatisticsClass.swift in Sources */,
 				CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
@@ -435,12 +432,11 @@
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
-				CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
+				CFCF47FD245B416A00C394E9 /* profileClass.swift in Sources */,
 				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
 				CFB2A620244EE196004EE385 /* MenuViewController.swift in Sources */,
 				CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */,
-				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CFCF47F5245B3A8F00C394E9 /* listShops.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,

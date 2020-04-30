@@ -2,16 +2,14 @@ import Foundation
 import MapKit
 
 struct shopsData: Codable {
-    var name: String 
+          var name: String
           var category: String
           var address: String
           var city: String
           var id: Int
           var postcode: String
           fileprivate var imageName: String
-       //  let coordinates: Coordinates
     fileprivate var coordinates: Coordinates
-          
 }
       
 struct Coordinates: Hashable, Codable {

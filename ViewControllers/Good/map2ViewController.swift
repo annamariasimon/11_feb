@@ -1,5 +1,3 @@
-//AUTOMATE MAPS? - comments under addAnnotations
-
 import UIKit
 import MapKit
 
@@ -7,9 +5,6 @@ class map2ViewController: UIViewController {
     
     private let locationManager = CLLocationManager()
     private var currentCoordinate: CLLocationCoordinate2D?
-    
-/*    private var destinations:[MKPointAnnotation] = []
-    private var currentRoute: MKRoute? */
 
     @IBAction func changeMapType(_ sender: Any) {
         if (sender as AnyObject).selectedSegmentIndex == 0 {
@@ -26,7 +21,7 @@ class map2ViewController: UIViewController {
         mapView.delegate = self
         
         configuraLocationDervices()
-        // Do any additional setup after loading the view.
+
     }
     
     private func configuraLocationDervices() {
@@ -35,7 +30,7 @@ class map2ViewController: UIViewController {
         let status = CLLocationManager.authorizationStatus()
         
         if status == .notDetermined {
-            locationManager.requestAlwaysAuthorization() //this should be request.whenInUseAuthorisation
+            locationManager.requestAlwaysAuthorization()
         } else if status == .authorizedAlways || status == .authorizedWhenInUse {
            beginLocationUpdates(locationManager: locationManager)
         }
@@ -54,12 +49,11 @@ class map2ViewController: UIViewController {
 
     private func addAnnotations() {
         
-        //could be like: add newAnnotation: if there is a new shopId, let newAnnotation
         
         let asdaLondonAnnotation = MKPointAnnotation()
         asdaLondonAnnotation.title = "Asda"     //shop.newshopid.title
         asdaLondonAnnotation.subtitle = "London, NW9 0AS"
-        asdaLondonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 51.59465, longitude: -0.261743) //THESE COORDINATES SHOULD COME FROM THE SHOP INFO LIKE shop.asdashopId.coordinates.latitude and longtitudeű
+        asdaLondonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 51.59465, longitude: -0.261743)
         
         let primarkLondonAnnotation = MKPointAnnotation()
         primarkLondonAnnotation.title = "Primark"
@@ -96,15 +90,6 @@ class map2ViewController: UIViewController {
         mcDonaldsBigBen.subtitle = "London, SE1 7PB"
         mcDonaldsBigBen.coordinate = CLLocationCoordinate2D(latitude: 51.501414, longitude: -0.119631)
         
-  /*      destinations.append(asdaLondonAnnotation)
-        destinations.append(primarkLondonAnnotation)
-        destinations.append(asdaBournemouthAnnotation)
-        destinations.append(tescoMetroBmouthAnnotation)
-        destinations.append(wilkoBmouthAnnotation)
-        destinations.append(bootsSouthamptonAnnotation)
-        destinations.append(pretLondonAnnotation)
-        destinations.append(mcDonaldsBigBen) */
-        
         mapView.addAnnotation(asdaLondonAnnotation)
         mapView.addAnnotation(primarkLondonAnnotation)
         mapView.addAnnotation(asdaBournemouthAnnotation)
@@ -115,31 +100,7 @@ class map2ViewController: UIViewController {
         mapView.addAnnotation(mcDonaldsBigBen)
         
     }
-    
-  /*  private func constructRoute(userLocation: CLLocationCoordinate2D) {
-        let directionsRequest = MKDirections.Request()
-        directionsRequest.source = MKMapItem(placemark: MKPlacemark(coordinate: userLocation))
-        directionsRequest.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinations[0].coordinate))
-        directionsRequest.requestsAlternateRoutes = true
-        directionsRequest.transportType = .walking
-        
-        let directions = MKDirections(request: directionsRequest)
-        
-        directions.calculate { [weak self] (directionsResponse, error) in
-            guard let strongSelf = self else { return }
-            
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let response = directionsResponse, response.routes.count > 0 {
-                strongSelf.currentRoute = response.routes[0]
-                
-                strongSelf.mapView.addOverlay(response.routes[0].polyline)
-                strongSelf.mapView.setVisibleMapRect(response.routes[0].polyline.boundingMapRect, animated: true)
-            }
-        }
     }
-    */
-}
 
 extension map2ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -148,7 +109,6 @@ extension map2ViewController: CLLocationManagerDelegate {
         if currentCoordinate == nil {
             zoomToLatestLocation(with: latestLocation.coordinate)
             addAnnotations()
-     //       constructRoute(userLocation: latestLocation.coordinate)
         }
         currentCoordinate = latestLocation.coordinate
     }
@@ -161,20 +121,7 @@ extension map2ViewController: CLLocationManagerDelegate {
 }
 
 extension map2ViewController: MKMapViewDelegate {
-    /*
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        guard let currentRoute = currentRoute else {
-             return MKOverlayRenderer()
-        }
-        
-        let polyLineRenderer = MKPolylineRenderer(polyline: currentRoute.polyline)
-        polyLineRenderer.strokeColor = UIColor.black
-        polyLineRenderer.lineWidth = 4
-        
-        return polyLineRenderer
-        
-    }
-    */
+
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "AnnotationView")
@@ -199,7 +146,7 @@ extension map2ViewController: MKMapViewDelegate {
             annotationView?.image = UIImage(named: "mekiLog1")
         }
         else if annotation === mapView.userLocation {
-            annotationView?.image = UIImage(named: "meloc")     //or profile picture
+            annotationView?.image = UIImage(named: "meloc")    
         }
         
         annotationView?.canShowCallout = true

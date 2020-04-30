@@ -21,7 +21,9 @@ class Receipt {
     
     var dictionary: [String: Any] {
         return ["companyName": companyName!,
-                "date": Date()]
+                "itemPrice": itemPrice!,
+                "date": Date(),
+                "paymentMethod": paymentMethod!]
     }
     
 }

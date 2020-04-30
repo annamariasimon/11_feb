@@ -1,9 +1,15 @@
-//
-//  randomShopAdd.swift
-//  11_feb
-//
-//  Created by Annamaria Simon on 28/04/2020.
-//  Copyright © 2020 Annamaria Simon. All rights reserved.
-//
-
 import Foundation
+import UIKit
+
+class shopInfo {
+    var number: Int
+    var name: String
+    var shopId: String
+    
+    init(number: Int, name: String, shopId: String) {
+        self.number = number
+        self.name = name
+        self.shopId = shopId
+    }
+}
+

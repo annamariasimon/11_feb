@@ -10,18 +10,15 @@
 		5785FA81FB03F30C7E4745AF /* Pods_11_feb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F9256E30F7E9F50710038 /* Pods_11_feb.framework */; };
 		CF174A47245708F700442BD0 /* map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF174A46245708F700442BD0 /* map2ViewController.swift */; };
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
+		CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */; };
 		CF85D56524437813008D4377 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56424437813008D4377 /* shopsData.swift */; };
 		CF85D56724437969008D4377 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56624437969008D4377 /* DataLoader.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
-		CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56A24438A83008D4377 /* ScannerViewController.swift */; };
 		CF8C5B3E24583F84005E7077 /* readFirestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */; };
-		CF8C5B40245847AF005E7077 /* shopsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */; };
-		CF8C5B42245849DB005E7077 /* sCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */; };
 		CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B4324584FBC005E7077 /* newTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
 		CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */; };
 		CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90C26D244CEDA8002FA6AE /* ShopsL.swift */; };
-		CF95F69D245381350048CC3D /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */; };
 		CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69E245392CA0048CC3D /* extProfileViewController.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
 		CFA237F42411325F006FF316 /* navBar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F32411325F006FF316 /* navBar2.jpg */; };
@@ -34,7 +31,6 @@
 		CFA23823241182DC006FF316 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23822241182DC006FF316 /* CollectionViewController.swift */; };
 		CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23824241182E5006FF316 /* ClickViewController.swift */; };
 		CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2382A24118322006FF316 /* FirstViewController.swift */; };
-		CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A61D244E0A3D004EE385 /* shopView.swift */; };
 		CFB2A620244EE196004EE385 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A61F244EE196004EE385 /* MenuViewController.swift */; };
 		CFB2A622244F0C55004EE385 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A621244F0C55004EE385 /* Shop.swift */; };
 		CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2A623244F1D56004EE385 /* SlideInTransition.swift */; };
@@ -69,18 +65,15 @@
 		215F9256E30F7E9F50710038 /* Pods_11_feb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_feb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF174A46245708F700442BD0 /* map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map2ViewController.swift; sourceTree = "<group>"; };
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomShopAdd.swift; sourceTree = "<group>"; };
 		CF85D56424437813008D4377 /* shopsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
 		CF85D56624437969008D4377 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
-		CF85D56A24438A83008D4377 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readFirestoreViewController.swift; sourceTree = "<group>"; };
-		CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsCollectionViewController.swift; sourceTree = "<group>"; };
-		CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF8C5B4324584FBC005E7077 /* newTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopLocationViewController.swift; sourceTree = "<group>"; };
 		CF90C26D244CEDA8002FA6AE /* ShopsL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsL.swift; sourceTree = "<group>"; };
-		CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = forgotPasswordViewController.swift; path = ViewControllers/Other/forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		CF95F69E245392CA0048CC3D /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extProfileViewController.swift; path = ViewControllers/New/extProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
 		CFA237F32411325F006FF316 /* navBar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navBar2.jpg; sourceTree = "<group>"; };
@@ -93,7 +86,6 @@
 		CFA23822241182DC006FF316 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CFA23824241182E5006FF316 /* ClickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickViewController.swift; sourceTree = "<group>"; };
 		CFA2382A24118322006FF316 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CFB2A61D244E0A3D004EE385 /* shopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopView.swift; sourceTree = "<group>"; };
 		CFB2A61F244EE196004EE385 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CFB2A621244F0C55004EE385 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CFB2A623244F1D56004EE385 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
@@ -247,14 +239,15 @@
 			children = (
 				CFA2382A24118322006FF316 /* FirstViewController.swift */,
 				CFA238192411829C006FF316 /* SignUpViewController.swift */,
+				CF95F69E245392CA0048CC3D /* extProfileViewController.swift */,
 				CFA23820241182D1006FF316 /* LoginViewController.swift */,
 				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
+				CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */,
+				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
 				CFA23824241182E5006FF316 /* ClickViewController.swift */,
 				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
-				CF95F69E245392CA0048CC3D /* extProfileViewController.swift */,
 				CFB2A621244F0C55004EE385 /* Shop.swift */,
 				CFA2381E241182C5006FF316 /* Receipt.swift */,
-				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
 				CF85D56424437813008D4377 /* shopsData.swift */,
 				CF85D56624437969008D4377 /* DataLoader.swift */,
 				CF85D56824438148008D4377 /* DataTableViewController.swift */,
@@ -268,12 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				CFDC2DAC24228F25001B0D55 /* New Other */,
-				CF85D56A24438A83008D4377 /* ScannerViewController.swift */,
 				CF90C26D244CEDA8002FA6AE /* ShopsL.swift */,
-				CFB2A61D244E0A3D004EE385 /* shopView.swift */,
 				CF90C26B244CE590002FA6AE /* shopLocationViewController.swift */,
-				CF8C5B41245849DB005E7077 /* sCollectionViewCell.swift */,
-				CF8C5B3F245847AF005E7077 /* shopsCollectionViewController.swift */,
 				CF8C5B3D24583F84005E7077 /* readFirestoreViewController.swift */,
 				CF8C5B4324584FBC005E7077 /* newTableViewController.swift */,
 			);
@@ -285,7 +274,6 @@
 			children = (
 				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 				CFA2381C241182BE006FF316 /* ReceiptViewController.swift */,
-				CF95F69C245381350048CC3D /* forgotPasswordViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -433,16 +421,15 @@
 				CF174A47245708F700442BD0 /* map2ViewController.swift in Sources */,
 				CFA23825241182E5006FF316 /* ClickViewController.swift in Sources */,
 				CF35420C240C10A400B45B91 /* Utilities.swift in Sources */,
-				CF85D56B24438A83008D4377 /* ScannerViewController.swift in Sources */,
 				CF90C26C244CE590002FA6AE /* shopLocationViewController.swift in Sources */,
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
 				CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
+				CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */,
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
 				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
-				CF8C5B40245847AF005E7077 /* shopsCollectionViewController.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
 				CF90C26E244CEDA8002FA6AE /* ShopsL.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
@@ -451,14 +438,11 @@
 				CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */,
 				CFA2381D241182BE006FF316 /* ReceiptViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
-				CFB2A61E244E0A3D004EE385 /* shopView.swift in Sources */,
 				CF8C5B3E24583F84005E7077 /* readFirestoreViewController.swift in Sources */,
 				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
-				CF8C5B42245849DB005E7077 /* sCollectionViewCell.swift in Sources */,
 				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
 				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,
-				CF95F69D245381350048CC3D /* forgotPasswordViewController.swift in Sources */,
 				CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);

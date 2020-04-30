@@ -3,7 +3,7 @@ import UIKit
 extension SignUpViewController {
     
     func setupAvatar() {
-         profileImage.layer.cornerRadius = 5 //CHANGE
+         profileImage.layer.cornerRadius = 5
          profileImage.clipsToBounds = true
          profileImage.isUserInteractionEnabled = true
          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
@@ -17,7 +17,6 @@ extension SignUpViewController {
         picker.delegate = self
          self.present(picker, animated: true, completion: nil)
      }
-    
 }
 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

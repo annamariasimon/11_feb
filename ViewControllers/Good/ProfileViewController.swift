@@ -13,9 +13,16 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var lastVisitedShopLabel: UILabel!
     @IBOutlet weak var numberOfReceiptsLabel: UILabel!
     @IBOutlet weak var lastPriceLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var lastVisitedShopLabel: UILabel!
+    
+    @IBOutlet weak var pointsNameLabel: UILabel!
+    @IBOutlet weak var numberRNameL: UILabel!
+    @IBOutlet weak var lastShopNameL: UILabel!
+    @IBOutlet weak var lastPriceNameL: UILabel!
+    
     
     let db = Firestore.firestore()
      
@@ -28,12 +35,20 @@ class ProfileViewController: UIViewController {
      override func viewDidLoad() {
          super.viewDidLoad()
          
+        pointsNameLabel.text = "Your Level: "
+        numberRNameL.text = "Total number of receipts: "
+        lastShopNameL.text = "Last visited shop: "
+        lastPriceNameL.text = "Last spent: "
+        
+        let randomLevel = Int.random(in: 1...4)
+        pointsLabel.text = "\(randomLevel)"
         
          userInfoDocumentRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
          
          receiptDataCollectionRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
          
     //     setupUI()
+        
          
      }
      

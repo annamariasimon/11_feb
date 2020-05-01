@@ -12,5 +12,4 @@ func setNews(new: News){
         nameLabel.text = new.title
         infoLabel.text = new.news
     }
-
 }

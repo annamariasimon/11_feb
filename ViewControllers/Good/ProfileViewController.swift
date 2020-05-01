@@ -39,10 +39,6 @@ class ProfileViewController: UIViewController {
          userInfoDocumentRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
          
          receiptDataCollectionRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("receipts")
-         
-    //     setupUI()
-        
-         
      }
      
      override func viewWillAppear(_ animated: Bool) {
@@ -74,7 +70,7 @@ class ProfileViewController: UIViewController {
                  guard let snap = snapshot else { return }
                  let number = snap.documents.count
                  
-                 self.numberOfReceiptsLabel.text = "Total number of receipts:  \(number)"       //number of receipts
+                 self.numberOfReceiptsLabel.text = "Total number of receipts:  \(number)"
                  
                  for document in snap.documents {
                      let data = document.data()
@@ -86,16 +82,19 @@ class ProfileViewController: UIViewController {
                      let recDet = Details(companyName: companyName, date: date, itemPrice: Double(itemPrice), paymentMethod: paymentMethod)
                      
                      self.receiptDet.append(recDet)
+                    self.receiptDet.sort { $0.date > $1.date }
+                     
+                    
+                    let text1 = self.receiptDet[0].companyName
+                    self.lastVisitedShopLabel.text = "Last visited shop: \(text1)"
+                     
+                     let priceText = "£\(self.receiptDet[0].itemPrice)"
+                     self.lastPriceLabel.text = "Last spent: \(priceText)"
+                    
+                    self.lastVisitedShopLabel.reloadInputViews()
                     
                  }
-                 self.receiptDet.sort { $0.date > $1.date }
                  
-                
-                let text1 = self.receiptDet[0].companyName     //last visited shop
-                self.lastVisitedShopLabel.text = "Last visited shop: \(text1)"
-                 
-                 let priceText = "£\(self.receiptDet[0].itemPrice)"          // akkor mennyit koltott
-                 self.lastPriceLabel.text = "Last spent: \(priceText)"
              }
          }
          

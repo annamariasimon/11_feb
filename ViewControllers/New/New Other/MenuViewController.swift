@@ -2,7 +2,6 @@ import UIKit
 
 enum MenuType: Int {
     case home
-    case privacy
 }
 
 class MenuViewController: UITableViewController {

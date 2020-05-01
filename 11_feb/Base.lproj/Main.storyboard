@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNT-TA-Qdt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFM-3s-sQY">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -458,46 +458,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="privacy" rowHeight="68" id="gV9-4L-kL5">
-                                        <rect key="frame" x="0.0" y="86" width="414" height="68"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gV9-4L-kL5" id="GL4-XU-zk5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shield" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-Dd-avz">
-                                                    <rect key="frame" x="16" y="22" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="0CY-bz-SMG"/>
-                                                        <constraint firstAttribute="width" constant="24" id="nwi-f3-dsr"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwk-4q-t1T">
-                                                    <rect key="frame" x="56" y="20.666666666666671" width="131" height="27"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJl-r1-wig">
-                                                    <rect key="frame" x="16" y="66" width="398" height="2"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="PuO-6l-4DM"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="ZJl-r1-wig" secondAttribute="bottom" id="4PH-ip-oKb"/>
-                                                <constraint firstItem="Hwk-4q-t1T" firstAttribute="leading" secondItem="PUx-Dd-avz" secondAttribute="trailing" constant="16" id="B9X-2G-I0B"/>
-                                                <constraint firstItem="PUx-Dd-avz" firstAttribute="centerY" secondItem="GL4-XU-zk5" secondAttribute="centerY" id="BP7-U1-kjP"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZJl-r1-wig" secondAttribute="trailing" id="Tfq-SA-B3a"/>
-                                                <constraint firstItem="Hwk-4q-t1T" firstAttribute="centerY" secondItem="PUx-Dd-avz" secondAttribute="centerY" id="Tyt-oe-lWc"/>
-                                                <constraint firstItem="ZJl-r1-wig" firstAttribute="leading" secondItem="GL4-XU-zk5" secondAttribute="leading" constant="16" id="dop-Yc-b75"/>
-                                                <constraint firstItem="PUx-Dd-avz" firstAttribute="leading" secondItem="GL4-XU-zk5" secondAttribute="leading" constant="16" id="qET-GK-gXl"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -512,33 +472,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qd-iR-ImM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3503" y="-333"/>
-        </scene>
-        <!--privacyVC-->
-        <scene sceneID="rqn-tm-6fh">
-            <objects>
-                <viewController storyboardIdentifier="privacyVC" title="privacyVC" id="upt-s2-Qgj" customClass="privacyViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yn4-mk-maa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLv-hI-w9h">
-                                <rect key="frame" x="20" y="438" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="MBe-1R-LRJ"/>
-                    </view>
-                    <connections>
-                        <outlet property="labelL" destination="BLv-hI-w9h" id="1Eo-gj-R03"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yte-Ln-f2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4678.2608695652179" y="-314.0625"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="NnL-i0-Qzz">
@@ -986,7 +919,6 @@
         <image name="Location" width="144" height="144"/>
         <image name="News" width="144" height="144"/>
         <image name="Points" width="144" height="144"/>
-        <image name="Shield" width="144" height="144"/>
         <image name="Shop" width="144" height="144"/>
         <image name="Stats" width="144" height="144"/>
         <image name="bckgrnd500" width="1725" height="2000"/>

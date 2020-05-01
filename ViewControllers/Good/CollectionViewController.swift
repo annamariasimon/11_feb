@@ -12,11 +12,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
     
     let transition = SlideInTransition()
+    var topView: UIView?
     
     @IBAction func didTapLocation(_ sender: Any) {
         let map = storyboard?.instantiateViewController(identifier: "mapVC") as! map2ViewController
         present(map, animated: true)
         
+    }
+    
+    @IBAction func didTapNews(_ sender: Any) {
+        let news = storyboard?.instantiateViewController(identifier: "newsVC") as! DataTableViewController
+        present(news, animated: true)
     }
     
     
@@ -35,6 +41,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
        func transitionToNew(_ menuType: MenuType) {
            let titleMenu = String(describing: menuType).capitalized
            self.title = titleMenu
+            
+        topView?.removeFromSuperview()
+        switch menuType {
+        case .profile:
+            let profilevc = ProfileViewController()
+            view.addSubview(profilevc.view)
+            self.topView = profilevc.view
+            addChild(profilevc)
+        default:
+            break
+        }
        }
     
     @IBAction func add(_ sender: Any) {

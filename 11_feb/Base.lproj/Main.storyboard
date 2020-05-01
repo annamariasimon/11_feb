@@ -78,16 +78,13 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="Network" image="Shop" width="129" id="jFc-dU-rtt">
+                        <barButtonItem title="Network" image="Globe" width="129" id="jFc-dU-rtt">
                             <connections>
-                                <segue destination="yyR-KM-tz6" kind="show" id="tkb-JG-vfm"/>
+                                <action selector="didTapNews:" destination="yJP-9s-8kQ" id="HSm-OK-aQP"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Home" image="News" width="252.66666666666669" id="rR5-Xv-6Ut">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="qJv-a0-3gF" kind="show" id="1ND-Of-TGW"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem title="Location" image="Location" width="313.66666666666669" id="VHs-nf-WeO">
                             <connections>
@@ -274,13 +271,28 @@
                                     <action selector="changeMapType:" destination="ovn-33-X4M" eventType="valueChanged" id="RM4-KH-Ngu"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-Zg-Hii">
+                                <rect key="frame" x="20" y="44" width="41" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="67v-dQ-NCQ"/>
+                                    <constraint firstAttribute="width" constant="41" id="tkY-UY-JJm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="blackbackbutton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissVC:" destination="ovn-33-X4M" eventType="touchUpInside" id="csE-qw-hLR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kh7-N0-log" firstAttribute="top" secondItem="SRg-9I-nWe" secondAttribute="top" id="0Uu-E4-ORn"/>
                             <constraint firstItem="2o2-mW-luz" firstAttribute="trailing" secondItem="ffr-WP-xOE" secondAttribute="trailing" constant="130" id="5ve-LX-Lgn"/>
                             <constraint firstItem="ffr-WP-xOE" firstAttribute="top" secondItem="2o2-mW-luz" secondAttribute="top" constant="20" id="DYS-lK-34M"/>
+                            <constraint firstItem="0g1-Zg-Hii" firstAttribute="leading" secondItem="2o2-mW-luz" secondAttribute="leading" constant="20" id="U2d-fr-erc"/>
                             <constraint firstItem="kh7-N0-log" firstAttribute="leading" secondItem="2o2-mW-luz" secondAttribute="leading" id="c6j-VM-EUp"/>
+                            <constraint firstItem="0g1-Zg-Hii" firstAttribute="top" secondItem="2o2-mW-luz" secondAttribute="top" id="cyD-hQ-knm"/>
                             <constraint firstAttribute="bottom" secondItem="kh7-N0-log" secondAttribute="bottom" id="miI-JC-ds5"/>
                             <constraint firstItem="kh7-N0-log" firstAttribute="trailing" secondItem="2o2-mW-luz" secondAttribute="trailing" id="oBz-cz-0Xa"/>
                             <constraint firstItem="ffr-WP-xOE" firstAttribute="leading" secondItem="2o2-mW-luz" secondAttribute="leading" constant="130" id="uPn-0p-H93"/>
@@ -300,14 +312,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7Z-a2-7h4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4410" y="1146"/>
+            <point key="canvasLocation" x="4407.2463768115949" y="1144.4196428571429"/>
         </scene>
         <!--Data Table View Controller-->
         <scene sceneID="RTa-y0-zhi">
             <objects>
-                <tableViewController id="yyR-KM-tz6" customClass="DataTableViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="newsVC" id="yyR-KM-tz6" customClass="DataTableViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kRD-fp-Rx4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -384,7 +396,7 @@
             <objects>
                 <viewController id="qJv-a0-3gF" customClass="QRCodeViewController" customModule="_1_feb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cSS-Yo-eKV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5W9-QU-L82">
@@ -1059,6 +1071,7 @@
         <image name="Back" width="144" height="144"/>
         <image name="Fav Person" width="144" height="144"/>
         <image name="Female" width="500" height="500"/>
+        <image name="Globe" width="144" height="144"/>
         <image name="Graph" width="144" height="144"/>
         <image name="Location" width="144" height="144"/>
         <image name="News" width="144" height="144"/>
@@ -1067,6 +1080,7 @@
         <image name="Shop" width="144" height="144"/>
         <image name="Stats" width="144" height="144"/>
         <image name="bckgrnd500" width="1725" height="2000"/>
+        <image name="blackbackbutton" width="144" height="144"/>
         <image name="labelbc4" width="1538" height="771"/>
         <image name="menu" width="28" height="28"/>
         <image name="plus" catalog="system" width="128" height="113"/>

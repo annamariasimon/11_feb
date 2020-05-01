@@ -23,6 +23,10 @@ class map2ViewController: UIViewController {
         configuraLocationDervices()
 
     }
+    @IBAction func dismissVC(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     private func configuraLocationDervices() {
         locationManager.delegate = self

@@ -481,13 +481,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-oY-30W">
-                                <rect key="frame" x="0.0" y="-15" width="414" height="911"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-oY-30W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ChT-mI-dsG">
-                                <rect key="frame" x="40" y="702" width="334" height="120"/>
+                                <rect key="frame" x="40" y="415" width="334" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU2-R3-jdC">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -511,12 +510,37 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackDots" translatesAutoresizingMaskIntoConstraints="NO" id="TfV-HH-Z0T">
+                                <rect key="frame" x="172" y="295" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="FJl-9j-vs7"/>
+                                    <constraint firstAttribute="height" constant="70" id="Miv-Yb-jka"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3r-JQ-PhP">
+                                <rect key="frame" x="126.33333333333333" y="360" width="161.66666666666669" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="07M-Lc-R5U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ChT-mI-dsG" firstAttribute="leading" secondItem="mDP-6c-eI9" secondAttribute="leading" constant="40" id="mdK-dl-p5D"/>
-                            <constraint firstItem="mDP-6c-eI9" firstAttribute="bottom" secondItem="ChT-mI-dsG" secondAttribute="bottom" constant="40" id="nxa-hh-QAe"/>
-                            <constraint firstItem="mDP-6c-eI9" firstAttribute="trailing" secondItem="ChT-mI-dsG" secondAttribute="trailing" constant="40" id="qmw-Ab-ayj"/>
+                            <constraint firstItem="5jk-oY-30W" firstAttribute="leading" secondItem="mDP-6c-eI9" secondAttribute="leading" id="7dW-cS-cWN"/>
+                            <constraint firstItem="o3r-JQ-PhP" firstAttribute="centerX" secondItem="5jk-oY-30W" secondAttribute="centerX" id="8Iu-wY-SqK"/>
+                            <constraint firstAttribute="bottom" secondItem="5jk-oY-30W" secondAttribute="bottom" id="Bcx-vO-hcl"/>
+                            <constraint firstItem="ChT-mI-dsG" firstAttribute="top" secondItem="o3r-JQ-PhP" secondAttribute="bottom" constant="20" id="ByC-2g-AmS"/>
+                            <constraint firstItem="5jk-oY-30W" firstAttribute="trailing" secondItem="mDP-6c-eI9" secondAttribute="trailing" id="Cmd-QZ-bfI"/>
+                            <constraint firstItem="o3r-JQ-PhP" firstAttribute="top" secondItem="mDP-6c-eI9" secondAttribute="top" constant="316" id="Oh0-nH-WnM"/>
+                            <constraint firstItem="5jk-oY-30W" firstAttribute="top" secondItem="jkw-0Z-FyS" secondAttribute="top" id="PCx-iN-Gy4"/>
+                            <constraint firstItem="o3r-JQ-PhP" firstAttribute="centerX" secondItem="TfV-HH-Z0T" secondAttribute="centerX" id="YDC-fr-rLq"/>
+                            <constraint firstItem="TfV-HH-Z0T" firstAttribute="centerX" secondItem="jkw-0Z-FyS" secondAttribute="centerX" id="ZgK-zr-fMa"/>
+                            <constraint firstItem="ChT-mI-dsG" firstAttribute="leading" secondItem="mDP-6c-eI9" secondAttribute="leading" constant="40" id="q6b-UK-uVs"/>
+                            <constraint firstItem="mDP-6c-eI9" firstAttribute="trailing" secondItem="ChT-mI-dsG" secondAttribute="trailing" constant="40" id="x5K-Om-mBG"/>
+                            <constraint firstItem="TfV-HH-Z0T" firstAttribute="top" secondItem="mDP-6c-eI9" secondAttribute="top" constant="251" id="xff-kF-PTd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mDP-6c-eI9"/>
                     </view>
@@ -528,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzF-rw-d1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="781"/>
+            <point key="canvasLocation" x="324.63768115942031" y="780.80357142857144"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="N4p-df-AaF">
@@ -923,6 +947,7 @@
         <image name="Stats" width="144" height="144"/>
         <image name="bckgrnd500" width="1725" height="2000"/>
         <image name="bckgrnd8" width="414" height="896"/>
+        <image name="blackDots" width="144" height="144"/>
         <image name="blackbackbutton" width="144" height="144"/>
         <image name="labelbc4" width="1538" height="771"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>

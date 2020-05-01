@@ -18,6 +18,20 @@ class ClickViewController: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var postcodeLabel: UILabel!
     
+    @IBAction func didTapLocation(_ sender: Any) {
+        let map = storyboard?.instantiateViewController(identifier: "mapVC") as! map2ViewController
+             present(map, animated: true)
+    }
+    
+    @IBAction func didTapProfile(_ sender: Any) {
+        let profile = storyboard?.instantiateViewController(identifier: "profile") as! ProfileViewController
+                      present(profile, animated: true)
+    }
+    
+    @IBAction func didTapNews(_ sender: Any) {
+         let news = storyboard?.instantiateViewController(identifier: "newsVC") as! DataTableViewController
+              present(news, animated: true)
+    }
     
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
         

@@ -1,8 +1,8 @@
 import UIKit
 
-enum MenuType: Int { // change cases to actual menupoints!
+enum MenuType: Int {
     case home
-    case privacypol
+    case privacy
 }
 
 class MenuViewController: UITableViewController {
@@ -11,8 +11,6 @@ class MenuViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -22,7 +20,5 @@ class MenuViewController: UITableViewController {
             self?.didTapMenuType?(menuType)
         }
     }
-   
-//CONTINUE
     
 }

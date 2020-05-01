@@ -1,5 +1,3 @@
-//SHADOWS!!
-
 import UIKit
 
 class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
@@ -28,10 +26,8 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
             containerView.addSubview(dimmingView)
             dimmingView.frame = containerView.bounds
             
-            //add menuviewcontroller to container
             containerView.addSubview(toViewController.view)
-            
-            //init frame off the screen
+  
             toViewController.view.frame = CGRect(x: -finalWidth, y: 0, width: finalWidth, height: finalHeight)
         }
         

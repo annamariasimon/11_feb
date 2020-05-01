@@ -18,30 +18,23 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var lastVisitedShopLabel: UILabel!
     
-    @IBOutlet weak var pointsNameLabel: UILabel!
-    @IBOutlet weak var numberRNameL: UILabel!
-    @IBOutlet weak var lastShopNameL: UILabel!
-    @IBOutlet weak var lastPriceNameL: UILabel!
-    
     
     let db = Firestore.firestore()
      
      var image: UIImage? = nil
      
      let storage = Storage.storage()
-     
 
+    @IBAction func dismissVC(_ sender: Any) {
+         self.dismiss(animated: true, completion: nil)
+    }
      
      override func viewDidLoad() {
          super.viewDidLoad()
          
-        pointsNameLabel.text = "Your Level: "
-        numberRNameL.text = "Total number of receipts: "
-        lastShopNameL.text = "Last visited shop: "
-        lastPriceNameL.text = "Last spent: "
         
         let randomLevel = Int.random(in: 1...4)
-        pointsLabel.text = "\(randomLevel)"
+        pointsLabel.text = "Your Level: \(randomLevel)"
         
          userInfoDocumentRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
          
@@ -81,7 +74,7 @@ class ProfileViewController: UIViewController {
                  guard let snap = snapshot else { return }
                  let number = snap.documents.count
                  
-                 self.numberOfReceiptsLabel.text = "\(number)"       //number of receipts
+                 self.numberOfReceiptsLabel.text = "Total number of receipts:  \(number)"       //number of receipts
                  
                  for document in snap.documents {
                      let data = document.data()
@@ -93,12 +86,16 @@ class ProfileViewController: UIViewController {
                      let recDet = Details(companyName: companyName, date: date, itemPrice: Double(itemPrice), paymentMethod: paymentMethod)
                      
                      self.receiptDet.append(recDet)
+                    
                  }
                  self.receiptDet.sort { $0.date > $1.date }
-                 self.lastVisitedShopLabel.text = self.receiptDet[0].companyName     //last visited shop
+                 
+                
+                let text1 = self.receiptDet[0].companyName     //last visited shop
+                self.lastVisitedShopLabel.text = "Last visited shop: \(text1)"
                  
                  let priceText = "£\(self.receiptDet[0].itemPrice)"          // akkor mennyit koltott
-                 self.lastPriceLabel.text = priceText
+                 self.lastPriceLabel.text = "Last spent: \(priceText)"
              }
          }
          

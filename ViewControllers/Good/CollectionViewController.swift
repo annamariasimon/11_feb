@@ -46,12 +46,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             
         topView?.removeFromSuperview()
         switch menuType {
-        case .privacypol:
-            let view = UIView()
-            view.backgroundColor = .black
-            view.frame = self.view.bounds
-            self.view.addSubview(view)
-            self.topView = view
         default:
             break
         }

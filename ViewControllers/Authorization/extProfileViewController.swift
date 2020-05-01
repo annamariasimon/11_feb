@@ -1,5 +1,5 @@
 import UIKit
-
+ 
 extension SignUpViewController {
     
     func setupAvatar() {
@@ -18,7 +18,7 @@ extension SignUpViewController {
          self.present(picker, animated: true, completion: nil)
      }
 }
-
+ 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

@@ -10,13 +10,13 @@
 		5785FA81FB03F30C7E4745AF /* Pods_11_feb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F9256E30F7E9F50710038 /* Pods_11_feb.framework */; };
 		CF0DBC28245CD570004EC7A7 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBC27245CD570004EC7A7 /* AppContainerViewController.swift */; };
 		CF0DBC2A245CD665004EC7A7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBC29245CD665004EC7A7 /* AppManager.swift */; };
+		CF0DBC2D245CE6BD004EC7A7 /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBC2C245CE6BD004EC7A7 /* extProfileViewController.swift */; };
 		CF174A47245708F700442BD0 /* map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF174A46245708F700442BD0 /* map2ViewController.swift */; };
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
 		CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */; };
 		CF85D56524437813008D4377 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56424437813008D4377 /* shopsData.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
-		CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69E245392CA0048CC3D /* extProfileViewController.swift */; };
 		CFA237F824116BFB006FF316 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA237F724116BFB006FF316 /* Constants.swift */; };
 		CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA238192411829C006FF316 /* SignUpViewController.swift */; };
 		CFA2381F241182C5006FF316 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2381E241182C5006FF316 /* Receipt.swift */; };
@@ -48,13 +48,13 @@
 		215F9256E30F7E9F50710038 /* Pods_11_feb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_feb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0DBC27245CD570004EC7A7 /* AppContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
 		CF0DBC29245CD665004EC7A7 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		CF0DBC2C245CE6BD004EC7A7 /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extProfileViewController.swift; sourceTree = "<group>"; };
 		CF174A46245708F700442BD0 /* map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map2ViewController.swift; sourceTree = "<group>"; };
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomShopAdd.swift; sourceTree = "<group>"; };
 		CF85D56424437813008D4377 /* shopsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CF95F69E245392CA0048CC3D /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extProfileViewController.swift; path = ViewControllers/New/extProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F724116BFB006FF316 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFA238192411829C006FF316 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CFA2381E241182C5006FF316 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
@@ -113,13 +113,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CF0DBC2B245CE60F004EC7A7 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				CF0DBC27245CD570004EC7A7 /* AppContainerViewController.swift */,
+				CF0DBC29245CD665004EC7A7 /* AppManager.swift */,
+				CFA2382A24118322006FF316 /* FirstViewController.swift */,
+				CF0DBC2C245CE6BD004EC7A7 /* extProfileViewController.swift */,
+				CFA238192411829C006FF316 /* SignUpViewController.swift */,
+				CFA23820241182D1006FF316 /* LoginViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 		CFA2381B241182AC006FF316 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CF0DBC2B245CE60F004EC7A7 /* Authorization */,
 				CFF603A4241A4F3100757C9A /* Good */,
-				CFF603A5241A4F3E00757C9A /* New */,
-				CFF603A7241A4F9900757C9A /* NeedWork */,
-				CFF603A6241A4F4700757C9A /* Other */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,15 +180,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CFDC2DAC24228F25001B0D55 /* New Other */ = {
-			isa = PBXGroup;
-			children = (
-				CFB2A61F244EE196004EE385 /* MenuViewController.swift */,
-				CFB2A623244F1D56004EE385 /* SlideInTransition.swift */,
-			);
-			path = "New Other";
-			sourceTree = "<group>";
-		};
 		CFF60390241A47C400757C9A /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,12 +190,6 @@
 		CFF603A4241A4F3100757C9A /* Good */ = {
 			isa = PBXGroup;
 			children = (
-				CF0DBC27245CD570004EC7A7 /* AppContainerViewController.swift */,
-				CF0DBC29245CD665004EC7A7 /* AppManager.swift */,
-				CFA2382A24118322006FF316 /* FirstViewController.swift */,
-				CFA238192411829C006FF316 /* SignUpViewController.swift */,
-				CF95F69E245392CA0048CC3D /* extProfileViewController.swift */,
-				CFA23820241182D1006FF316 /* LoginViewController.swift */,
 				CFA23822241182DC006FF316 /* CollectionViewController.swift */,
 				CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */,
 				CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */,
@@ -208,30 +204,10 @@
 				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
 				CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */,
 				CFCF47FC245B416A00C394E9 /* profileClass.swift */,
+				CFB2A61F244EE196004EE385 /* MenuViewController.swift */,
+				CFB2A623244F1D56004EE385 /* SlideInTransition.swift */,
 			);
 			path = Good;
-			sourceTree = "<group>";
-		};
-		CFF603A5241A4F3E00757C9A /* New */ = {
-			isa = PBXGroup;
-			children = (
-				CFDC2DAC24228F25001B0D55 /* New Other */,
-			);
-			path = New;
-			sourceTree = "<group>";
-		};
-		CFF603A6241A4F4700757C9A /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		CFF603A7241A4F9900757C9A /* NeedWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NeedWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +345,7 @@
 				CFCF47FD245B416A00C394E9 /* profileClass.swift in Sources */,
 				CFA23821241182D1006FF316 /* LoginViewController.swift in Sources */,
 				CFB2A620244EE196004EE385 /* MenuViewController.swift in Sources */,
-				CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */,
+				CF0DBC2D245CE6BD004EC7A7 /* extProfileViewController.swift in Sources */,
 				CF0DBC2A245CD665004EC7A7 /* AppManager.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CFCF47F5245B3A8F00C394E9 /* listShops.swift in Sources */,

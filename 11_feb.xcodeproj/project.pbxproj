@@ -12,9 +12,7 @@
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
 		CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */; };
 		CF85D56524437813008D4377 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56424437813008D4377 /* shopsData.swift */; };
-		CF85D56724437969008D4377 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56624437969008D4377 /* DataLoader.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
-		CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C5B4324584FBC005E7077 /* newTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
 		CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95F69E245392CA0048CC3D /* extProfileViewController.swift */; };
 		CFA237F2241131E7006FF316 /* navbarIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA237F1241131E7006FF316 /* navbarIcon.jpg */; };
@@ -41,16 +39,13 @@
 		CFCF47F9245B3D5900C394E9 /* sTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */; };
 		CFCF47FB245B402400C394E9 /* userStatisticsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */; };
 		CFCF47FD245B416A00C394E9 /* profileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF47FC245B416A00C394E9 /* profileClass.swift */; };
-		CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */; };
 		CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */; };
-		CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */; };
 		CFEAEBC323FADD4600648D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */; };
 		CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6035C24145E7800757C9A /* ProfileViewController.swift */; };
 		CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF6035E2414600E00757C9A /* IMG_1508.jpg */; };
 		CFF603612414630C00757C9A /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF603602414630C00757C9A /* profile.png */; };
 		CFF60394241A485900757C9A /* ASDA-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF60393241A485900757C9A /* ASDA-Logo.png */; };
 		CFF95B3924350CBF004416E2 /* primark_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3124350CB4004416E2 /* primark_img.jpg */; };
-		CFF95B3A24350CBF004416E2 /* shopData.json in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3224350CB5004416E2 /* shopData.json */; };
 		CFF95B3B24350CBF004416E2 /* odeon_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3324350CB7004416E2 /* odeon_img.jpg */; };
 		CFF95B3C24350CBF004416E2 /* tesco_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3424350CB9004416E2 /* tesco_img.jpg */; };
 		CFF95B3D24350CBF004416E2 /* sixmp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF95B3524350CBA004416E2 /* sixmp.jpg */; };
@@ -67,9 +62,7 @@
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomShopAdd.swift; sourceTree = "<group>"; };
 		CF85D56424437813008D4377 /* shopsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
-		CF85D56624437969008D4377 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
-		CF8C5B4324584FBC005E7077 /* newTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF95F69E245392CA0048CC3D /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = extProfileViewController.swift; path = ViewControllers/New/extProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		CFA237F1241131E7006FF316 /* navbarIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navbarIcon.jpg; sourceTree = "<group>"; };
@@ -98,16 +91,13 @@
 		CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sTableViewCell.swift; sourceTree = "<group>"; };
 		CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStatisticsClass.swift; sourceTree = "<group>"; };
 		CFCF47FC245B416A00C394E9 /* profileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileClass.swift; sourceTree = "<group>"; };
-		CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		CFDC2D99241E6BE9001B0D55 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		CFEAEBC223FADD4600648D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CFF6035C24145E7800757C9A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CFF6035E2414600E00757C9A /* IMG_1508.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1508.jpg; sourceTree = "<group>"; };
 		CFF603602414630C00757C9A /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		CFF60393241A485900757C9A /* ASDA-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASDA-Logo.png"; sourceTree = "<group>"; };
 		CFF95B3124350CB4004416E2 /* primark_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = primark_img.jpg; sourceTree = "<group>"; };
-		CFF95B3224350CB5004416E2 /* shopData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopData.json; sourceTree = "<group>"; };
 		CFF95B3324350CB7004416E2 /* odeon_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = odeon_img.jpg; sourceTree = "<group>"; };
 		CFF95B3424350CB9004416E2 /* tesco_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesco_img.jpg; sourceTree = "<group>"; };
 		CFF95B3524350CBA004416E2 /* sixmp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sixmp.jpg; sourceTree = "<group>"; };
@@ -210,7 +200,6 @@
 				CFF95B3724350CBE004416E2 /* boots_img.jpg */,
 				CFF95B3324350CB7004416E2 /* odeon_img.jpg */,
 				CFF95B3124350CB4004416E2 /* primark_img.jpg */,
-				CFF95B3224350CB5004416E2 /* shopData.json */,
 				CFF95B3524350CBA004416E2 /* sixmp.jpg */,
 				CFF95B3424350CB9004416E2 /* tesco_img.jpg */,
 				CFF95B3624350CBC004416E2 /* wilko_img.jpg */,
@@ -252,8 +241,6 @@
 				CF85D56824438148008D4377 /* DataTableViewController.swift */,
 				CFCF47F4245B3A8F00C394E9 /* listShops.swift */,
 				CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */,
-				CF85D56624437969008D4377 /* DataLoader.swift */,
-				CFD6C2BD24576BBC0013D5A6 /* QRCodeViewController.swift */,
 				CFF6035C24145E7800757C9A /* ProfileViewController.swift */,
 				CFCF47FA245B402400C394E9 /* userStatisticsClass.swift */,
 				CFCF47FC245B416A00C394E9 /* profileClass.swift */,
@@ -272,8 +259,6 @@
 		CFF603A6241A4F4700757C9A /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				CF8C5B4324584FBC005E7077 /* newTableViewController.swift */,
-				CFDC2DAF2422928A001B0D55 /* ImageViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -356,7 +341,6 @@
 				CFF6035F2414600E00757C9A /* IMG_1508.jpg in Resources */,
 				CFF95B3E24350CC0004416E2 /* wilko_img.jpg in Resources */,
 				CFA237F624113330006FF316 /* navbarr.jpg in Resources */,
-				CFF95B3A24350CBF004416E2 /* shopData.json in Resources */,
 				CFB2F7B023F314B00084B96A /* Assets.xcassets in Resources */,
 				CFF95B3C24350CBF004416E2 /* tesco_img.jpg in Resources */,
 				CFF95B3F24350CC0004416E2 /* boots_img.jpg in Resources */,
@@ -425,7 +409,6 @@
 				CFDC2D9A241E6BE9001B0D55 /* CollectionViewCell.swift in Sources */,
 				CFB2F7A723F314AB0084B96A /* AppDelegate.swift in Sources */,
 				CFCF47FB245B402400C394E9 /* userStatisticsClass.swift in Sources */,
-				CF8C5B4424584FBC005E7077 /* newTableViewController.swift in Sources */,
 				CFF6035D24145E7800757C9A /* ProfileViewController.swift in Sources */,
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
 				CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */,
@@ -439,11 +422,8 @@
 				CF95F69F245392CA0048CC3D /* extProfileViewController.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CFCF47F5245B3A8F00C394E9 /* listShops.swift in Sources */,
-				CF85D56724437969008D4377 /* DataLoader.swift in Sources */,
-				CFDC2DB02422928A001B0D55 /* ImageViewController.swift in Sources */,
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
 				CFB2A622244F0C55004EE385 /* Shop.swift in Sources */,
-				CFD6C2BE24576BBC0013D5A6 /* QRCodeViewController.swift in Sources */,
 				CFA2381A2411829C006FF316 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

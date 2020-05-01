@@ -1,8 +1,7 @@
 import UIKit
 
 enum MenuType: Int { // change cases to actual menupoints!
-    case profile
-    case shops
+    case home
     case privacypol
 }
 

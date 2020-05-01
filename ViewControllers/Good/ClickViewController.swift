@@ -19,18 +19,6 @@ class ClickViewController: UIViewController {
     @IBOutlet weak var postcodeLabel: UILabel!
     
     
-    @IBAction func didTapMenu(_ sender: Any) {
-       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
-               else
-              {  return }
-               menuViewController.didTapMenuType = { menuType in
-                   print(menuType)
-               }
-        menuViewController.modalPresentationStyle = .overCurrentContext
-        menuViewController.transitioningDelegate = self
-        present(menuViewController, animated: true)
-    }
-    
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
         
           if sender.selectedSegmentIndex == 0 {
@@ -101,13 +89,4 @@ class ClickViewController: UIViewController {
             }
         }
             
-            extension ClickViewController: UIViewControllerTransitioningDelegate {
-            func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-                transition.isPresenting = true
-                return transition
-            }
-            func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-                transition.isPresenting = false
-                return transition
-            }
-        }
+

@@ -21,15 +21,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     }
     
     @IBAction func didTapNews(_ sender: Any) {
-        let news = storyboard?.instantiateViewController(identifier: "newsVC") as! DataTableViewController
-        present(news, animated: true)
+        let profile = storyboard?.instantiateViewController(identifier: "profile") as! ProfileViewController
+               present(profile, animated: true)
     }
     
+    @IBAction func didTapProfile(_ sender: Any) {
+       let news = storyboard?.instantiateViewController(identifier: "newsVC") as! DataTableViewController
+       present(news, animated: true)
+    }
     
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
-      guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
-           else
-          {  return }
+      guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController else {  return }
            menuViewController.didTapMenuType = { menuType in
                self.transitionToNew(menuType)
            }
@@ -44,11 +46,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             
         topView?.removeFromSuperview()
         switch menuType {
-        case .profile:
-            let profilevc = ProfileViewController()
-            view.addSubview(profilevc.view)
-            self.topView = profilevc.view
-            addChild(profilevc)
+        case .privacypol:
+            let view = UIView()
+            view.backgroundColor = .black
+            view.frame = self.view.bounds
+            self.view.addSubview(view)
+            self.topView = view
         default:
             break
         }

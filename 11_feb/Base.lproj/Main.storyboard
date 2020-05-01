@@ -78,24 +78,27 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="Network" image="Globe" width="129" id="jFc-dU-rtt">
+                        <barButtonItem title="Network" image="Fav Person" width="125" id="jFc-dU-rtt">
                             <connections>
                                 <action selector="didTapNews:" destination="yJP-9s-8kQ" id="HSm-OK-aQP"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Home" image="News" width="252.66666666666669" id="rR5-Xv-6Ut">
+                        <barButtonItem title="Home" image="Globe" width="193.66666666666669" id="rR5-Xv-6Ut">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapProfile:" destination="yJP-9s-8kQ" id="oaa-Og-egI"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem title="Location" image="Location" width="313.66666666666669" id="VHs-nf-WeO">
+                        <barButtonItem title="Location" image="Location" width="352.66666666666669" id="VHs-nf-WeO">
                             <connections>
                                 <action selector="didTapLocation:" destination="yJP-9s-8kQ" id="VLH-At-hjC"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="My Receipts" id="2qg-Mp-xdT">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="awR-Q0-3Pt">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="list.bullet" catalog="system" id="awR-Q0-3Pt">
                             <inset key="largeContentSizeImageInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapMenu:" destination="yJP-9s-8kQ" id="p8T-WN-rY8"/>
                             </connections>
@@ -455,22 +458,22 @@
                         <sections>
                             <tableViewSection id="H6M-GM-rxb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" rowHeight="68" id="0bH-Fd-OBU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="home" rowHeight="68" id="0bH-Fd-OBU">
                                         <rect key="frame" x="0.0" y="18" width="414" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0bH-Fd-OBU" id="dxk-zP-hom">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fav Person" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-2x-qRJ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-2x-qRJ">
                                                     <rect key="frame" x="16" y="22" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="24" id="JQD-Ix-4fl"/>
                                                         <constraint firstAttribute="height" constant="24" id="mgU-ly-n2a"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-B0-QDp">
-                                                    <rect key="frame" x="56" y="21" width="60" height="26.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My receipts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-B0-QDp">
+                                                    <rect key="frame" x="56" y="20.666666666666671" width="111" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
@@ -495,48 +498,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shops" rowHeight="68" id="K66-OE-5EU">
-                                        <rect key="frame" x="0.0" y="86" width="414" height="68"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K66-OE-5EU" id="Mam-Hq-XJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shop" translatesAutoresizingMaskIntoConstraints="NO" id="zDC-Tc-2lW">
-                                                    <rect key="frame" x="16" y="22" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="Lni-Yi-uZg"/>
-                                                        <constraint firstAttribute="height" constant="24" id="qQd-bv-Oc1"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNY-Rr-l1a">
-                                                    <rect key="frame" x="56" y="20.666666666666671" width="61" height="27"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35G-Ge-91n">
-                                                    <rect key="frame" x="16" y="66" width="398" height="2"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="QOV-yh-W63"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zDC-Tc-2lW" firstAttribute="centerY" secondItem="Mam-Hq-XJt" secondAttribute="centerY" id="721-0Y-abJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="35G-Ge-91n" secondAttribute="bottom" id="Nce-k9-TgN"/>
-                                                <constraint firstItem="yNY-Rr-l1a" firstAttribute="centerY" secondItem="zDC-Tc-2lW" secondAttribute="centerY" id="Pcr-WQ-bDg"/>
-                                                <constraint firstItem="zDC-Tc-2lW" firstAttribute="leading" secondItem="Mam-Hq-XJt" secondAttribute="leading" constant="16" id="PkY-am-XaY"/>
-                                                <constraint firstItem="35G-Ge-91n" firstAttribute="leading" secondItem="Mam-Hq-XJt" secondAttribute="leading" constant="16" id="RNb-O1-DxE"/>
-                                                <constraint firstAttribute="trailing" secondItem="35G-Ge-91n" secondAttribute="trailing" id="ahB-1x-9a6"/>
-                                                <constraint firstItem="yNY-Rr-l1a" firstAttribute="leading" secondItem="zDC-Tc-2lW" secondAttribute="trailing" constant="16" id="mwN-Qf-AGI"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="privacypol" rowHeight="68" id="gV9-4L-kL5">
-                                        <rect key="frame" x="0.0" y="154" width="414" height="68"/>
+                                        <rect key="frame" x="0.0" y="86" width="414" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gV9-4L-kL5" id="GL4-XU-zk5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
@@ -1082,7 +1045,7 @@
         <image name="bckgrnd500" width="1725" height="2000"/>
         <image name="blackbackbutton" width="144" height="144"/>
         <image name="labelbc4" width="1538" height="771"/>
-        <image name="menu" width="28" height="28"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
 </document>

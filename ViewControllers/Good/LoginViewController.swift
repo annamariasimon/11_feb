@@ -67,9 +67,10 @@ class LoginViewController: UIViewController {
               }
               
               }
+    
     @IBAction func dismissAction(_ sender: Any) {
-          navigationController?.popViewController(animated: true)
-            }
+    navigationController?.popViewController(animated: true)
+    }
             
             func showError(_ message:String){
                        errorLabel.text = message

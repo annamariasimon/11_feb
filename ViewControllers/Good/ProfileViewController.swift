@@ -24,6 +24,11 @@ class ProfileViewController: UIViewController {
      var image: UIImage? = nil
      
      let storage = Storage.storage()
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        AppManager.shared.logout()
+    }
+    
 
     @IBAction func dismissVC(_ sender: Any) {
          self.dismiss(animated: true, completion: nil)

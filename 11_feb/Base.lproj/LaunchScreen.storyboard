@@ -15,8 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="q3G-0B-4Tr">
-                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name_rajdhani" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-yG-mnd">
+                                <rect key="frame" x="87" y="403" width="240" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="nTO-Nr-jqy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_500" translatesAutoresizingMaskIntoConstraints="NO" id="q3G-0B-4Tr">
+                                <rect key="frame" x="143" y="267" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1F9-Ny-J8h"/>
                                     <constraint firstAttribute="width" constant="128" id="M6z-fH-0yD"/>
@@ -25,8 +31,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q3G-0B-4Tr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ca7-RS-tia"/>
+                            <constraint firstItem="7j6-yG-mnd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1TT-Ah-XEr"/>
+                            <constraint firstItem="7j6-yG-mnd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AYe-wt-4bV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7j6-yG-mnd" secondAttribute="trailing" constant="87" id="bmR-2a-qud"/>
+                            <constraint firstItem="7j6-yG-mnd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fUt-ln-VjN"/>
                             <constraint firstItem="q3G-0B-4Tr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lOv-1I-NN6"/>
+                            <constraint firstItem="q3G-0B-4Tr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="wzL-s8-Ib5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch_logo" width="444" height="444"/>
+        <image name="logo_500" width="500" height="500"/>
+        <image name="name_rajdhani" width="350" height="90"/>
     </resources>
 </document>

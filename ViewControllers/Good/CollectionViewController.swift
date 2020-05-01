@@ -13,6 +13,13 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     let transition = SlideInTransition()
     
+    @IBAction func didTapLocation(_ sender: Any) {
+        let map = storyboard?.instantiateViewController(identifier: "mapVC") as! map2ViewController
+        present(map, animated: true)
+        
+    }
+    
+    
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
       guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
            else

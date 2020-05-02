@@ -2,6 +2,7 @@ import UIKit
 
 enum MenuType: Int {
     case home
+    case soon
 }
 
 class MenuViewController: UITableViewController {

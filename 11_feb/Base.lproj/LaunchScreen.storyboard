@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name_rajdhani" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-yG-mnd">
-                                <rect key="frame" x="87" y="403" width="240" height="90"/>
+                                <rect key="frame" x="87" y="405" width="240" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="nTO-Nr-jqy"/>
                                 </constraints>
@@ -31,10 +31,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7j6-yG-mnd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1TT-Ah-XEr"/>
                             <constraint firstItem="7j6-yG-mnd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AYe-wt-4bV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7j6-yG-mnd" secondAttribute="trailing" constant="87" id="bmR-2a-qud"/>
                             <constraint firstItem="7j6-yG-mnd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fUt-ln-VjN"/>
+                            <constraint firstItem="7j6-yG-mnd" firstAttribute="top" secondItem="q3G-0B-4Tr" secondAttribute="bottom" constant="10" id="kFW-yt-fjy"/>
                             <constraint firstItem="q3G-0B-4Tr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lOv-1I-NN6"/>
                             <constraint firstItem="q3G-0B-4Tr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="wzL-s8-Ib5"/>
                         </constraints>

@@ -12,9 +12,9 @@
 		CF0DBC2A245CD665004EC7A7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBC29245CD665004EC7A7 /* AppManager.swift */; };
 		CF0DBC2D245CE6BD004EC7A7 /* extProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBC2C245CE6BD004EC7A7 /* extProfileViewController.swift */; };
 		CF174A47245708F700442BD0 /* map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF174A46245708F700442BD0 /* map2ViewController.swift */; };
+		CF30D8FD245E25070037FA63 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30D8FC245E25070037FA63 /* shopsData.swift */; };
 		CF35420C240C10A400B45B91 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35420B240C10A400B45B91 /* Utilities.swift */; };
 		CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */; };
-		CF85D56524437813008D4377 /* shopsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56424437813008D4377 /* shopsData.swift */; };
 		CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85D56824438148008D4377 /* DataTableViewController.swift */; };
 		CF90C26A244CE3C5002FA6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90C269244CE3C5002FA6AE /* MapKit.framework */; };
 		CFA237F824116BFB006FF316 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA237F724116BFB006FF316 /* Constants.swift */; };
@@ -50,9 +50,9 @@
 		CF0DBC29245CD665004EC7A7 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		CF0DBC2C245CE6BD004EC7A7 /* extProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extProfileViewController.swift; sourceTree = "<group>"; };
 		CF174A46245708F700442BD0 /* map2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map2ViewController.swift; sourceTree = "<group>"; };
+		CF30D8FC245E25070037FA63 /* shopsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
 		CF35420B240C10A400B45B91 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CF6679A22458A98900E6D2B4 /* randomShopAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomShopAdd.swift; sourceTree = "<group>"; };
-		CF85D56424437813008D4377 /* shopsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsData.swift; sourceTree = "<group>"; };
 		CF85D56824438148008D4377 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		CF90C269244CE3C5002FA6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CFA237F724116BFB006FF316 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				CF174A46245708F700442BD0 /* map2ViewController.swift */,
 				CFB2A621244F0C55004EE385 /* Shop.swift */,
 				CFA2381E241182C5006FF316 /* Receipt.swift */,
-				CF85D56424437813008D4377 /* shopsData.swift */,
+				CF30D8FC245E25070037FA63 /* shopsData.swift */,
 				CF85D56824438148008D4377 /* DataTableViewController.swift */,
 				CFCF47F4245B3A8F00C394E9 /* listShops.swift */,
 				CFCF47F8245B3D5900C394E9 /* sTableViewCell.swift */,
@@ -339,7 +339,6 @@
 				CFA2382B24118322006FF316 /* FirstViewController.swift in Sources */,
 				CF6679A32458A98900E6D2B4 /* randomShopAdd.swift in Sources */,
 				CFA2381F241182C5006FF316 /* Receipt.swift in Sources */,
-				CF85D56524437813008D4377 /* shopsData.swift in Sources */,
 				CFB2F7A923F314AB0084B96A /* SceneDelegate.swift in Sources */,
 				CF85D56924438148008D4377 /* DataTableViewController.swift in Sources */,
 				CFCF47FD245B416A00C394E9 /* profileClass.swift in Sources */,
@@ -347,6 +346,7 @@
 				CFB2A620244EE196004EE385 /* MenuViewController.swift in Sources */,
 				CF0DBC2D245CE6BD004EC7A7 /* extProfileViewController.swift in Sources */,
 				CF0DBC2A245CD665004EC7A7 /* AppManager.swift in Sources */,
+				CF30D8FD245E25070037FA63 /* shopsData.swift in Sources */,
 				CFA237F824116BFB006FF316 /* Constants.swift in Sources */,
 				CFCF47F5245B3A8F00C394E9 /* listShops.swift in Sources */,
 				CFB2A624244F1D56004EE385 /* SlideInTransition.swift in Sources */,
